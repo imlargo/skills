@@ -8,7 +8,7 @@ description: "Fast and formal branching modes, branch names, feature, release an
 ## Modes
 
 - **Fast** (quick MVPs, fast-moving projects): commit and push straight to `main`. The commit that finishes an issue has `Closes #N` in its body.
-- **Formal** (the repo has `develop`): `main` is production, `develop` is what ships next, and both only change through PRs. Propose switching when the project gets real users or needs grouped deploys; never create `develop` on your own.
+- **Formal** (the repo has `develop`): `main` is production, `develop` is what ships next, and both only change through PRs (except syncing `develop` from `main`). Propose switching when the project gets real users or needs grouped deploys; never create `develop` on your own.
 
 ## Names
 
@@ -19,5 +19,5 @@ description: "Fast and formal branching modes, branch names, feature, release an
 - **Feature/fix:** branch from up-to-date `develop`, keep it short-lived, PR into `develop`.
 - **Release:** PR `develop` → `main` titled `release: v1.4.0` (or `release: YYYY-MM-DD` if unversioned), listing the PRs and issues it ships. Merge with a merge commit, never squash: squashing makes `main` and `develop` diverge and the next release conflict. Then tag if versioned.
 - **Hotfix:** branch from `main`, PR into `main`, then merge `main` into `develop` right away so the next release doesn't revert it.
-- **Sync:** after every merge into `main`, update `develop` from it. Before a release, check `git merge-base --is-ancestor origin/main origin/develop`.
-- **Repo setup:** default branch `main`; protect `main` and `develop` (PRs and checks required, no force push); auto-delete merged branches.
+- **Sync:** after every merge into `main`, update `develop` from it directly (`git switch develop && git merge origin/main && git push`), the one push to `develop` that skips a PR. Before a release, check `git merge-base --is-ancestor origin/main origin/develop`.
+- **Repo setup:** default branch `main`; protect `main` and `develop` (PRs and checks required, no force push), letting admins bypass on `develop` so the sync push works; auto-delete merged branches.
