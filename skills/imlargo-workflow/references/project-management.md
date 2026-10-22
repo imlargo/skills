@@ -1,11 +1,11 @@
 ---
 name: project-management
-description: "How imlargo plans and tracks work: boards, milestones, iterations and statuses. Load when planning work, organizing a backlog or updating a project board."
+description: "How imlargo tracks work on GitHub Projects: boards, fields, statuses, milestones and automations. Load when creating or updating a project board or moving items through it."
 ---
 
 # Project Management
 
-<!-- TODO: Board columns/statuses and what moves an item between them, milestones or iterations, how work is broken down, and what is kept in sync automatically. -->
+<!-- TODO: Board columns/statuses and what moves an item between them, custom fields, milestones or iterations, and what is kept in sync automatically. Deciding what goes in the backlog belongs to imlargo-projects. -->
 
 ## Rules
 

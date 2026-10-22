@@ -41,7 +41,8 @@ All skills are hand-maintained and opinionated. They are layered: `imlargo` is t
 
 ```
 imlargo                      how I work + code conventions (always relevant)
-├── imlargo-workflow         versions, commits, PRs, issues, projects
+├── imlargo-projects         kickoff, requirements, context, setup, backlog, delivery
+├── imlargo-workflow         git and GitHub: branches, commits, versions, PRs, issues, boards
 ├── imlargo-frontend         frontend rules, any framework
 │   └── imlargo-svelte       Svelte / SvelteKit, my way
 └── imlargo-backend          backend rules, any language
@@ -51,7 +52,8 @@ imlargo                      how I work + code conventions (always relevant)
 | Skill | Description |
 |-------|-------------|
 | [imlargo](skills/imlargo) | Working style and code conventions, independent of language or framework |
-| [imlargo-workflow](skills/imlargo-workflow) | Git, versioning and releases, pull requests, issues and project management |
+| [imlargo-projects](skills/imlargo-projects) | How projects start and ship: kickoff, requirements, context file, templates, backlog, delivery |
+| [imlargo-workflow](skills/imlargo-workflow) | Git and GitHub: branches, commits, versioning and releases, PRs, issues, project boards |
 | [imlargo-frontend](skills/imlargo-frontend) | Frontend rules: architecture, components, state, styling, a11y, performance |
 | [imlargo-backend](skills/imlargo-backend) | Backend rules: architecture, API design, persistence, observability, security |
 | [imlargo-svelte](skills/imlargo-svelte) | How I work with Svelte and SvelteKit |

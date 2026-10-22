@@ -62,5 +62,4 @@ metadata:
 
 | Topic | Description | Reference |
 |-------|-------------|-----------|
-| Project Setup | Base files, tooling, CI and scripts for a new repository | [project-setup](references/project-setup.md) |
 | Code Review | Review checklist and how to write review feedback | [code-review](references/code-review.md) |

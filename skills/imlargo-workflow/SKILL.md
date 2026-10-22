@@ -1,6 +1,6 @@
 ---
 name: imlargo-workflow
-description: imlargo's workflow for git, versioning and project management. Covers branch names, commit messages, semantic versioning, tags and releases, changelogs, pull requests, issues, labels, milestones and project boards. Use when committing, bumping or releasing a version, opening or reviewing a PR, writing or triaging an issue, or planning work.
+description: imlargo's git and GitHub workflow. Covers branch names, commit messages, semantic versioning, tags and releases, changelogs, pull requests, issues, labels, milestones and GitHub Projects boards. Use when committing, bumping or releasing a version, opening or reviewing a PR, writing or triaging an issue, or updating a project board.
 metadata:
   author: imlargo
   version: "2026.10.22"
@@ -8,7 +8,7 @@ metadata:
 
 # Workflow
 
-> Builds on `imlargo`. Follow the repository's own conventions (CONTRIBUTING.md, templates, existing history) when they differ from these.
+> Builds on `imlargo`. Covers the mechanics on git and GitHub; how a project is planned and its backlog decided belongs to `imlargo-projects`. Follow the repository's own conventions (CONTRIBUTING.md, templates, existing history) when they differ from these.
 
 ## Principles
 
@@ -44,4 +44,4 @@ metadata:
 | Versioning and Releases | Version bumps, tags, changelog, release notes | [versioning-releases](references/versioning-releases.md) |
 | Pull Requests | PR title and body template, review and merge | [pull-requests](references/pull-requests.md) |
 | Issues | Issue templates, labels, priorities, triage | [issues](references/issues.md) |
-| Project Management | Boards, statuses, milestones and planning | [project-management](references/project-management.md) |
+| Project Management | GitHub Projects boards, statuses, milestones | [project-management](references/project-management.md) |
