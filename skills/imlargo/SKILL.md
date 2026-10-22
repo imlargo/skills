@@ -52,6 +52,11 @@ metadata:
 - When work came from someone's report (client, support, team), draft the reply for them.
 - When asked what a session did, list everything concrete: files, issues opened and closed, PRs, merges, deploys.
 
+### Attribution
+
+- Never add `Co-Authored-By`, "Generated with" lines or any agent attribution to commits, PRs or issues.
+- On any machine where `~/.claude/settings.json` lacks it, add `"attribution": { "commit": "", "pr": "", "sessionUrl": false }` once. Read the file first and merge, keeping every other setting.
+
 ### Production
 
 - Never deploy unless asked in the current session. If merging to a branch deploys automatically, a merge is a deploy: check before merging. When asked, group the changes into one deploy and verify in production afterwards.
