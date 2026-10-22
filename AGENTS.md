@@ -90,7 +90,9 @@ description: "{What it covers}. Load when {situation}."
 ```
 
 - One concept per file, file name equal to `name`.
-- Every reference must be linked from the `SKILL.md` references table, one level deep. References never link to other references.
+- Every reference must be linked from the `SKILL.md` references table. A reference may point to a sibling, but nothing may be reachable only through another reference: agents read nested chains partially.
+- Bundled executables go in `scripts/` inside the skill and are referenced relative to the skill directory.
+- Content adapted from other projects keeps a `Source references` HTML comment at the end of the file, and the project is credited in the README.
 - Code examples beat prose: show the preferred form, and the avoided form when it is a common mistake.
 
 ## Writing Guidelines

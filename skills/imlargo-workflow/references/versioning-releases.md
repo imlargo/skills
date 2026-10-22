@@ -1,16 +1,42 @@
 ---
 name: versioning-releases
-description: "How imlargo versions and releases software: version scheme, bump rules, tags, changelog and release notes. Load when bumping a version, tagging, publishing or writing a changelog."
+description: "When a project is versioned, how versions are bumped and tagged, and how the changelog is written. Load when bumping a version, tagging, publishing a release or editing CHANGELOG.md."
 ---
 
 # Versioning and Releases
 
-<!-- TODO: Version scheme and what triggers each bump, pre-release naming, tag format, release tooling/CI, changelog format and where release notes live. -->
+## When
 
-## Rules
+- Versioned: libraries, packages, CLIs, and products that are past a quick MVP (a serious MVP with real users counts).
+- Not versioned: quick MVPs in fast mode. They ship from `main` with no version, tags or changelog.
 
-<!-- TODO: One rule per bullet. Lead with the rule, then the reason when it is not obvious. -->
+## Version Scheme
 
-## Examples
+<!-- TODO: Version scheme (SemVer?), what triggers each bump, pre-releases, and the release tooling (e.g. bumpp, release-please, CI on tag). -->
 
-<!-- TODO: Short Prefer / Avoid snippets for the rules an agent is most likely to get wrong. Delete this section if it adds nothing. -->
+- Tag every release on the commit that ships it, as `v{version}` (`v1.4.0`). In formal mode that is the merge commit of the release PR on `main`.
+- Create a GitHub Release from the tag whose notes are the changelog entry for that version.
+
+## Changelog
+
+Keep a changelog only when the project is versioned. Follow [Keep a Changelog](https://keepachangelog.com):
+
+```markdown
+# Changelog
+
+## [Unreleased]
+
+### Added
+- Disable and re-enable an account from the danger zone (#1321)
+
+## [1.4.0] - 2026-10-22
+
+### Fixed
+- Disabled accounts no longer count toward the plan limit (#1315)
+```
+
+- `CHANGELOG.md` at the repo root, newest version first, dates as `YYYY-MM-DD`.
+- Sections, in this order and only when non-empty: `Added`, `Changed`, `Deprecated`, `Removed`, `Fixed`, `Security`.
+- Write for the people who use the project, not for the people who wrote it: what changed for them, with the issue or PR number. Never paste the commit log.
+- Add the entry under `[Unreleased]` in the same PR as the change. Releasing moves `[Unreleased]` to a new version heading.
+- Breaking changes say so first in their line and explain the migration.
