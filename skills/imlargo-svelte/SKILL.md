@@ -39,7 +39,7 @@ Taken from the template; don't swap a piece without asking.
 
 ## Svelte MCP
 
-imlargo's template enables the official Svelte plugin (`svelte@svelte` from `sveltejs/ai-tools` in `.claude/settings.json`), which provides this MCP. In any Svelte project, use it instead of memory: Svelte and SvelteKit change faster than the model's knowledge. If it's missing, say so and suggest enabling the plugin.
+imlargo's template ships it twice: the remote server in `.mcp.json` (`https://mcp.svelte.dev/mcp`, for any agent) and the official Svelte plugin in `.claude/settings.json` (`svelte@svelte`, which adds skills and the language server). In any Svelte project, use it instead of memory: Svelte and SvelteKit change faster than the model's knowledge. If it's missing, say so and suggest enabling the plugin.
 
 1. `list-sections` first, then `get-documentation` for every relevant section at once.
 2. `svelte-autofixer` on all Svelte code before delivering it, repeated until it returns nothing.
