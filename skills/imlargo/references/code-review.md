@@ -1,16 +1,29 @@
 ---
 name: code-review
-description: "What imlargo checks when reviewing code and how review feedback should be written. Load when reviewing a diff, a PR, or your own changes before handing them back."
+description: "Checklist for self-review before handing work back and for reviewing someone else's changes (a teammate, Codex, another agent). Load when reviewing a diff, a PR or your own changes."
 ---
 
 # Code Review
 
-<!-- TODO: Review checklist in priority order, what counts as blocking vs nit, and the tone and format of review comments. -->
+Use it on your own diff before reporting done, and on others' work when asked to review it.
 
-## Rules
+## Checklist
 
-<!-- TODO: One rule per bullet. Lead with the rule, then the reason when it is not obvious. -->
+In priority order. The first four are blocking.
 
-## Examples
+1. **Correct:** it solves the actual problem at its root cause, including edge cases (empty, error, concurrent, large data).
+2. **No regressions:** existing behavior, config and features still work. Nothing was removed that wasn't asked for.
+3. **Safe:** no secrets or personal data in code, logs, issues or PRs. Production data is untouched unless approved.
+4. **In scope:** nothing beyond the request. Extra fixes are reported, not shipped.
+5. **Consistent:** follows the repo's dominant pattern and reuses existing components, helpers, types and tokens.
+6. **Simple:** no over-engineering, dead code, premature abstraction or unused exports.
+7. **Typed:** no `any`, magic strings or inline complex types.
+8. **Commented right:** only the why; no narration or AI slop.
+9. **Tested:** behavior changes and bug fixes have tests (production projects).
+10. **Verified:** the check gate passed, and anything not verified is stated.
 
-<!-- TODO: Short Prefer / Avoid snippets for the rules an agent is most likely to get wrong. Delete this section if it adds nothing. -->
+## Reviewing Others' Work
+
+- Read the whole diff and the issue it closes, not just the summary. Summaries overclaim.
+- Report findings as: location, what is wrong, the concrete failure, the fix. Blocking first.
+- Don't restate what's fine. If nothing blocks, say so in one line.
