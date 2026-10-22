@@ -20,6 +20,10 @@ Turn the conversations in the local context folder (`local-context/` or similar)
 - Ambiguous items or business decisions: ask imlargo instead of creating the issue.
 - It must be repeatable. When imlargo says the chat was updated, process only what's new and sync everything again.
 
+## Chat to Implementation
+
+When imlargo asks to implement the chat's feedback instead of only filing it: cover at least the last two weeks (more if the context needs it), including meetings, feedback, prior analyses and imlargo's loose bullet notes. Build a prioritized backlog and roadmap from it, then work it end to end. Each feature gets a requirements analysis first (see `imlargo` task types). Ambiguous or contradictory items wait for imlargo.
+
 ## Report
 
 Short: issues created, closed and commented on, key findings, and what imlargo needs to clarify.

@@ -1,16 +1,30 @@
 ---
 name: styling
-description: "imlargo's styling rules: CSS approach, design tokens, theming, responsive layout and visual consistency. Load when writing styles or building layouts."
+description: "imlargo's styling rules: design system consistency, tokens, widths and layout, theming and responsive layout. Load when writing styles, building layouts or auditing views for design system consistency."
 ---
 
 # Styling
 
-<!-- TODO: CSS approach (utility, modules, scoped...), design tokens and theming, spacing/typography scales, responsive breakpoints, dark mode. -->
+<!-- TODO: Spacing/typography scales, responsive breakpoints, dark mode. -->
 
-## Rules
+## Design System
 
-<!-- TODO: One rule per bullet. Lead with the rule, then the reason when it is not obvious. -->
+- When a design system component fits (button, input, dialog, select...), use it in its pure form. No extra classes unless strictly necessary; keep its base style.
+- No hardcoded utility values (text sizes, tracking, colors, inline styles). Use the system's variants, props and tokens. A class that must be specific is backed by a component in `ui/`.
+- Own components are consistent with the design system and with each other, with escape hatches for composition and passing props to children.
+- Follow the philosophy of [shadcn-ui/lint](https://github.com/shadcn-ui/lint) without adding it as a dependency.
+
+## Widths
+
+- No fixed widths. Don't split width by hand (`w-3/12`, `w-[320px]`, `style="width: ..."`). Let content and layout size things.
+- When long content unbalances a layout, cap only that cell or column with `max-w-*`, cut the text with `truncate` or `line-clamp-*`, and show the full text in a tooltip.
 
 ## Examples
 
-<!-- TODO: Short Prefer / Avoid snippets for the rules an agent is most likely to get wrong. Delete this section if it adds nothing. -->
+```html
+<!-- Avoid -->
+<td class="w-[320px] text-[13px] tracking-tight">{description}</td>
+
+<!-- Prefer -->
+<td class="max-w-sm truncate" title={description}>{description}</td>
+```

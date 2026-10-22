@@ -119,5 +119,5 @@ Applies to docs, issues, PRs and messages to clients or the team.
 
 | Topic | Description | Reference |
 |-------|-------------|-----------|
-| Task Types | How to run an analysis, bug fix, feature, research or review task | [task-types](references/task-types.md) |
+| Task Types | How to run analysis, bug fix, feature, backlog, polish, research, architecture, migration and cleanup tasks | [task-types](references/task-types.md) |
 | Code Review | Self-review checklist before handing back, and reviewing others' work | [code-review](references/code-review.md) |

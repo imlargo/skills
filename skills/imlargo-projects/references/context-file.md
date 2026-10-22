@@ -13,7 +13,17 @@ description: "The project context docs every repo carries (AGENTS.md for rules, 
 | `CLAUDE.md` | Only a pointer to `AGENTS.md` (`@AGENTS.md`). Never a separate rulebook. |
 | `context.md` | Specs and product context: what the project is, its current focus, what's out of scope. |
 
-Larger projects split context, specs and roadmap into separate docs instead of one growing file.
+Larger projects split the docs instead of growing one file:
+
+- **Context:** what will be built, its purpose, the business, its rules and background.
+- **Specs:** definitions, expected features, requirements and every relevant detail discussed.
+- **Roadmap:** phases and where the work stands. Used for long or multi-session work such as migrations.
+
+## Decisions and Handoffs
+
+- Record relevant decisions as ADRs: context, decision, alternatives considered, consequences.
+- A handoff lets someone take the project over without depending on imlargo: what was built, what decisions were made and why, where things stand, and what's next.
+- When a decision isn't clear from the code or the conversations, ask instead of inventing a reason.
 
 ## Rules
 
@@ -25,4 +35,4 @@ Larger projects split context, specs and roadmap into separate docs instead of o
 
 ## Resuming Work
 
-Before continuing a previous session, read the context docs, handoffs, ADRs and prior work in the repo, then continue without redoing or contradicting what's already built.
+Before continuing a previous session, read the context docs, handoffs, ADRs and prior work in the repo, and check the real state of the code. If the roadmap or context is stale, update it first. Then continue from where the work actually stands, without redoing or contradicting what's built.

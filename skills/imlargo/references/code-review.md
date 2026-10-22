@@ -25,5 +25,6 @@ In priority order. The first four are blocking.
 ## Reviewing Others' Work
 
 - Read the whole diff and the issue it closes, not just the summary. Summaries overclaim.
-- Report findings as: location, what is wrong, the concrete failure, the fix. Blocking first.
+- Focus on code quality and architecture, not UI/UX, unless asked. Include maintainability risks and tech debt the change introduces.
+- Report findings as: location, what is wrong, why it's a problem, the fix. Blocking first.
 - Don't restate what's fine. If nothing blocks, say so in one line.
