@@ -23,7 +23,7 @@ metadata:
 - **Pull requests:** Conventional title ending in `(#issue)`; body with Summary, linked issue and Verification. Merge with a merge commit once checks are green, then close the issue. Screenshots only on request. → [pull-requests](references/pull-requests.md), [pr-body](references/pr-body.md), [visual-evidence](references/visual-evidence.md)
 - **Issues:** Symptom-first title, one type label plus `area:*` labels, priority `P0`-`P3`, facts separated from hypotheses, progress as comments. → [issues](references/issues.md)
 - **Versioning:** Only libraries, packages and products past a quick MVP: SemVer, `v` tags, `CHANGELOG.md`. → [versioning-releases](references/versioning-releases.md)
-- **GitHub Projects:** Create one only when imlargo asks; once it exists, every issue and PR lives in it with a current status. → [project-management](references/project-management.md)
+- **GitHub Projects:** Create one when imlargo asks or when setting up a new project's backlog; once it exists, every issue and PR lives in it with a current status. → [project-management](references/project-management.md)
 
 ## References
 

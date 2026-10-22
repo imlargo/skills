@@ -54,11 +54,24 @@ A view isn't done when the happy path works with sample data. Walk every role's 
 
 ## Accessibility
 
-<!-- TODO: Minimum bar every screen must meet. -->
+WCAG AA basics on every screen:
+
+- Semantic HTML: real buttons, links, headings, lists and tables.
+- Everything works with the keyboard, with visible focus.
+- Every input and icon-only button has a label.
+- Contrast is guaranteed by the tokens; color is never the only signal.
+- Component libraries run an accessibility check (axe) per component.
 
 ## Performance
 
-<!-- TODO: Budgets and rules (images, bundles, rendering). -->
+- Never block a navigation on slow data. Skeletons match the final layout so nothing jumps.
+- Batch writes and queries: never one database or API call per item in a loop. Serverless CPU limits turn that into failures.
+- Check what a dependency adds to the bundle before adding it; prefer the platform.
+
+## Responsive and Theming
+
+- Responsive depends on the product. Internal platforms and admin panels are desktop-first and must work well on mobile (no broken layouts, tables scroll). Public sites and end-user products are mobile-first. Templates and docs sites are desktop unless asked.
+- Theming goes through shadcn's tokens with their dark values. Follow the template's setup (`mode-watcher`, a toggle in the user menu); whether a product exposes dark mode depends on its brand.
 
 ## References
 

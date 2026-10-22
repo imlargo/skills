@@ -5,8 +5,6 @@ description: "imlargo's styling rules: shadcn as the design system with custom t
 
 # Styling
 
-<!-- TODO: Spacing/typography scales, responsive breakpoints, dark mode. -->
-
 ## The Design System
 
 - The design system is shadcn, used pure. The project's identity comes from its tokens (colors, radius, fonts, shadows in the theme stylesheet), never from editing or restyling components.

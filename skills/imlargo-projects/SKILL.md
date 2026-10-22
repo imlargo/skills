@@ -20,15 +20,29 @@ metadata:
 
 ## Lifecycle
 
-<!-- TODO: The phases a project goes through and what must exist before moving to the next one (kickoff -> requirements -> setup -> backlog -> build -> delivery). -->
+1. **Define:** kickoff interview, then the diagnosis and the repo docs (context, specs, roadmap). Nothing is built before this exists. → [kickoff](references/kickoff.md), [requirements](references/requirements.md)
+2. **Set up:** repo from the template, docs committed, backlog on GitHub. → [setup](references/setup.md), [backlog](references/backlog.md)
+3. **Build:** phase by phase, each one shipped and visible before the next.
+4. **Deliver and evolve:** handoff per phase; the software keeps growing afterwards. → [delivery](references/delivery.md)
 
 ## Project Types
 
-<!-- TODO: One line per type (personal, Kora client, open source, library); details in references/project-types.md. -->
+| Type | In short |
+|------|----------|
+| Kora client | Custom software for a business. Full Define phase, delivery per phase, production quality. |
+| Own product | imlargo's products. imlargo decides scope and pace; production or prototype, stated up front. |
+| Library / open source | Public API, versioning, changelog, docs, npm publishing. |
+| Prototype / PoC | Validates an idea fast on the template. No tests or CI; still clean code. |
+
+Details in [project-types](references/project-types.md).
 
 ## Starting a Project
 
-<!-- TODO: The short checklist the agent follows when asked to start a project; details in the kickoff, requirements and setup references. -->
+1. Ask which type it is and whether it's a prototype or production.
+2. Run the kickoff interview.
+3. Write the Define deliverables and get imlargo's approval.
+4. Create the repo from the template and commit the docs.
+5. Turn the roadmap into the GitHub backlog and project board.
 
 ## References
 
@@ -36,7 +50,7 @@ metadata:
 |-------|-------------|-----------|
 | Project Types | Personal, Kora client, open source and library differences | [project-types](references/project-types.md) |
 | Kickoff | Intake questions, project study, go/no-go decisions | [kickoff](references/kickoff.md) |
-| Requirements | Scope, non-goals, stories, acceptance criteria | [requirements](references/requirements.md) |
+| Requirements | The specs format: requirements, business rules, acceptance criteria, non-goals | [requirements](references/requirements.md) |
 | Context File | AGENTS.md vs context.md, writing context docs, resuming work | [context-file](references/context-file.md) |
 | Setup | Templates, init checklist, base files, CI, deploy | [setup](references/setup.md) |
 | Backlog | Breakdown, MVP cut, prioritization, milestones | [backlog](references/backlog.md) |

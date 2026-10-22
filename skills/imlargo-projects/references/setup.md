@@ -5,7 +5,12 @@ description: "How imlargo initializes a repository: which template to start from
 
 # Setup
 
-<!-- TODO: The init checklist (repo, naming, license, env, CI, deploy, domain). -->
+## Init Checklist
+
+- Repo name in kebab-case, matching the product or package.
+- Libraries and open source: MIT `LICENSE`. Client projects: no public license.
+- `.env.example` lists every variable, and the env schema validates them on startup.
+- Pre-commit hooks (husky + lint-staged) from the first commit. CI with the check gate in production projects and libraries, not prototypes.
 
 ## Templates
 
@@ -18,13 +23,15 @@ description: "How imlargo initializes a repository: which template to start from
 | UI components | [coral](https://github.com/imlargo/coral), installed into projects, not cloned |
 | Backend | Go, with Postgres and Redis when needed |
 
+## Deploy
+
+- SvelteKit apps deploy to Cloudflare Workers, as the template ships.
+- A Go backend runs in Docker on a server, when the project needs one.
+- Anything else only when the client requires it.
+
 ## Rules
 
 - Clone the template and build on it. Change what the template ships as little as possible; improvements to the base go back to the template.
 - Every repo carries `AGENTS.md` (rules), `CLAUDE.md` pointing to it, and `context.md`.
 - Pre-commit hooks and CI run the same check gate.
 - Libraries: ESM only, built with tsdown, checked with publint and attw, a smoke test of the built output on the oldest supported Node, published from CI with npm trusted publishing (no token). The tag matches the version and the changelog.
-
-## Examples
-
-<!-- TODO: Short Prefer / Avoid snippets for the rules an agent is most likely to get wrong. Delete this section if it adds nothing. -->

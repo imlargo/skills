@@ -5,7 +5,7 @@ description: "Creating and working with a GitHub Project: statuses, fields, view
 
 # Project Management
 
-Create a project only when imlargo asks. Once a repo has one, use it always: every issue and PR goes in, and status stays current. A stale board is worse than none.
+Create a project when imlargo asks or when setting up a new project's backlog (`imlargo-projects`). Once a repo has one, use it always: every issue and PR goes in, and status stays current. A stale board is worse than none.
 
 ## Setup
 

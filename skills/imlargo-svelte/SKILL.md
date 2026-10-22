@@ -22,6 +22,21 @@ metadata:
 - Remote functions aren't used while they're experimental.
 - `svelte-check` warnings (like `state_referenced_locally`) are reactivity bugs, not noise.
 
+## Stack
+
+Taken from the template; don't swap a piece without asking.
+
+| Concern | Choice |
+|---------|--------|
+| UI | shadcn-svelte, Tailwind, Coral for higher-level components |
+| Icons | `@lucide/svelte` |
+| Font | Geist via `@fontsource-variable/geist`, self-hosted |
+| Validation | zod |
+| Theme | `mode-watcher` |
+| Tests | Vitest; components with Vitest browser mode (`vitest-browser-svelte`, Playwright provider) |
+| Deploy | Cloudflare Workers |
+| i18n | None: one language per product, until it truly needs two |
+
 ## Svelte MCP
 
 imlargo's template enables the official Svelte plugin (`svelte@svelte` from `sveltejs/ai-tools` in `.claude/settings.json`), which provides this MCP. In any Svelte project, use it instead of memory: Svelte and SvelteKit change faster than the model's knowledge. If it's missing, say so and suggest enabling the plugin.

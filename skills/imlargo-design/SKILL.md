@@ -15,6 +15,12 @@ metadata:
 - shadcn, pure and untouched, is the base. A project's own design system comes from changing its tokens: colors, radius, fonts, shadows. Never from restyling or editing components.
 - Good UI is built from the system's components and composition, then raised with UX, details and supporting visual elements (icons, badges, links, empty and loading states).
 
+## Brand
+
+- Each product follows its own brand: palette, density and personality come from the client's brand, expressed through tokens.
+- When a product has no brand of its own, use imlargo's taste below. Kora's own brand: contained palette of blacks, grays and white, lots of air, strong typographic hierarchy, subtle animation.
+- Data-heavy views (tables, dashboards) stay scannable whatever the brand.
+
 ## Taste
 
 - Simple, minimalist, clean, sophisticated. Geometric over ornamental.
@@ -25,6 +31,7 @@ metadata:
 ## Typography
 
 - Hierarchy through size, weight and spacing, not color or effects.
+- Geist by default when the brand doesn't set a font.
 - Sentence case everywhere. No all-caps labels, headings or buttons; acronyms excepted.
 
 ## Color
@@ -40,7 +47,7 @@ metadata:
 
 ## Icons and Illustrations
 
-- Icons support content, from one icon set. Never emojis as icons.
+- Icons support content, from one set (Lucide). Never emojis as icons.
 - Badges, icons and links help scanning and navigation, but don't overdo them.
 - Illustrations are abstract and geometric, minimal, in brand colors, never literal clip-art. Isometric perspective works well.
 

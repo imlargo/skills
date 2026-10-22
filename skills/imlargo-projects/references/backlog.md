@@ -1,16 +1,18 @@
 ---
 name: backlog
-description: "How imlargo turns requirements into a backlog: breakdown, MVP cut, prioritization and milestones. Load when building, refining or prioritizing a backlog."
+description: "How the specs and roadmap become a GitHub backlog: issues per behavior, milestones per phase, epics, the project board and the MVP cut. Load when building, refining or prioritizing a backlog."
 ---
 
 # Backlog
 
-<!-- TODO: How requirements become epics/issues, how the MVP is cut, prioritization criteria, sizing and milestones. Tracking mechanics on GitHub belong to imlargo-workflow. -->
+Issue format, labels, priority and board mechanics follow `imlargo-workflow`.
 
 ## Rules
 
-<!-- TODO: One rule per bullet. Lead with the rule, then the reason when it is not obvious. -->
-
-## Examples
-
-<!-- TODO: Short Prefer / Avoid snippets for the rules an agent is most likely to get wrong. Delete this section if it adds nothing. -->
+- **One issue per deliverable behavior,** referencing the requirement it covers (`R-07`) and carrying its acceptance criteria.
+- **Epics** are a parent issue with sub-issues.
+- **One milestone per roadmap phase.**
+- **Every new project's backlog gets a GitHub Project board,** kept current from then on.
+- **The MVP is the smallest useful end-to-end flow:** the complete flow that replaces the current process (the spreadsheet, the chat) for the main role, in production with real users. Everything else goes to later phases.
+- Order inside a phase: what unblocks others first, then by priority.
+- The backlog mirrors the roadmap. When scope changes, update the specs, roadmap and issues together.
