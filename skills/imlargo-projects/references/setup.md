@@ -5,11 +5,25 @@ description: "How imlargo initializes a repository: which template to start from
 
 # Setup
 
-<!-- TODO: Template per project type (e.g. your Svelte template), the init checklist (repo, naming, license, env, CI, deploy, domain), base files and the scripts every repo exposes. -->
+<!-- TODO: The init checklist (repo, naming, license, env, CI, deploy, domain). -->
+
+## Templates
+
+| Project | Template |
+|---------|----------|
+| Web app (SvelteKit) | [imlargo/svelte-template](https://github.com/imlargo/svelte-template) |
+| Docs site | [imlargo/svdocs](https://github.com/imlargo/svdocs) |
+| TypeScript library | [imlargo/typescript-library-template](https://github.com/imlargo/typescript-library-template) |
+| Vue / Nuxt app | [klima-open-source/nuxt-template](https://github.com/klima-open-source/nuxt-template) |
+| UI components | [coral](https://github.com/imlargo/coral), installed into projects, not cloned |
+| Backend | Go, with Postgres and Redis when needed |
 
 ## Rules
 
-<!-- TODO: One rule per bullet. Lead with the rule, then the reason when it is not obvious. -->
+- Clone the template and build on it. Change what the template ships as little as possible; improvements to the base go back to the template.
+- Every repo carries `AGENTS.md` (rules), `CLAUDE.md` pointing to it, and `context.md`.
+- Pre-commit hooks and CI run the same check gate.
+- Libraries: ESM only, built with tsdown, checked with publint and attw, a smoke test of the built output on the oldest supported Node, published from CI with npm trusted publishing (no token). The tag matches the version and the changelog.
 
 ## Examples
 

@@ -20,4 +20,6 @@ description: "Fast and formal branching modes, branch names, feature, release an
 - **Release:** PR `develop` → `main` titled `release: v1.4.0` (or `release: YYYY-MM-DD` if unversioned), listing the PRs and issues it ships. Merge with a merge commit, never squash: squashing makes `main` and `develop` diverge and the next release conflict. Then tag if versioned.
 - **Hotfix:** branch from `main`, PR into `main`, then merge `main` into `develop` right away so the next release doesn't revert it.
 - **Sync:** after every merge into `main`, update `develop` from it directly (`git switch develop && git merge origin/main && git push`), the one push to `develop` that skips a PR. Before a release, check `git merge-base --is-ancestor origin/main origin/develop`.
+- **Finish on the base branch:** after merging, switch the local checkout back to `main` (`develop` in formal mode) and pull, so imlargo's working copy is current.
+- **Parallel sessions:** imlargo often runs several agent sessions on one repo. Pull before starting and before merging, never overwrite or revert work you didn't do, and keep issues in sync with what other sessions shipped.
 - **Repo setup:** default branch `main`; protect `main` and `develop` (PRs and checks required, no force push), letting admins bypass on `develop` so the sync push works; auto-delete merged branches.

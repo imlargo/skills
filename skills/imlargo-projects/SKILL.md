@@ -12,7 +12,11 @@ metadata:
 
 ## Principles
 
-<!-- TODO: The rules every project follows regardless of type (e.g. always start from a template, nothing is built without a context file). -->
+- Every project starts from one of imlargo's templates (see [setup](references/setup.md)). Legacy code is rebuilt on a fresh template, not patched in place.
+- Every project states whether it's a prototype or production. Prototypes, PoCs and templates skip tests and CI; production doesn't.
+- Context docs exist from day one (see [context-file](references/context-file.md)).
+- GitHub issues are the backlog, kept current (`imlargo-workflow`).
+- Product and business decisions are kept apart from code work and decided by imlargo.
 
 ## Lifecycle
 
