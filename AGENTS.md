@@ -31,8 +31,8 @@ Only `skills/` is distributed. Anything that is not skill content (templates, no
 | Layer | Skills | Contains |
 |-------|--------|----------|
 | Base | `imlargo` | How imlargo works and code conventions valid everywhere |
-| Process | `imlargo-projects`, `imlargo-workflow` | How projects start and ship; git and GitHub mechanics |
-| Domain | `imlargo-frontend`, `imlargo-backend` | Rules independent of framework or language |
+| Process | `imlargo-projects`, `imlargo-workflow`, `imlargo-prompting` | How projects start and ship; git and GitHub mechanics; prompts for agents |
+| Domain | `imlargo-frontend`, `imlargo-backend`, `imlargo-ui-pass` | Rules independent of framework or language, and domain-wide task skills |
 | Technology | `imlargo-svelte`, `imlargo-go` | How imlargo uses that stack, never a tutorial on it |
 
 - Put each rule in the most general layer where it holds. A Svelte skill must not restate frontend rules; a Go skill must not restate backend rules.

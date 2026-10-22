@@ -33,7 +33,8 @@ metadata:
 | Project Types | Personal, Kora client, open source and library differences | [project-types](references/project-types.md) |
 | Kickoff | Intake questions, project study, go/no-go decisions | [kickoff](references/kickoff.md) |
 | Requirements | Scope, non-goals, stories, acceptance criteria | [requirements](references/requirements.md) |
-| Context File | The per-project context file and its template | [context-file](references/context-file.md) |
+| Context File | AGENTS.md vs context.md, writing context docs, resuming work | [context-file](references/context-file.md) |
 | Setup | Templates, init checklist, base files, CI, deploy | [setup](references/setup.md) |
 | Backlog | Breakdown, MVP cut, prioritization, milestones | [backlog](references/backlog.md) |
+| Chat to Backlog | Exported team or support chats into verified GitHub issues | [chat-to-backlog](references/chat-to-backlog.md) |
 | Delivery | Demos, deploys, handoff, maintenance, close-out | [delivery](references/delivery.md) |
