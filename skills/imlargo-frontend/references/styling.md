@@ -9,6 +9,9 @@ description: "imlargo's styling rules: design system consistency, tokens, widths
 
 ## Design System
 
+- Utility CSS (Tailwind) always. Custom CSS only when it's truly impossible with utilities.
+- No scale size variants (`size="sm"`, `"lg"`, `"xs"`): keep the base size. Two buttons doing the same thing on different screens must look the same, and once a size enters one place it must be remembered everywhere. If something looks too big or small, the problem is the layout around it. `size="icon"` and its variants are allowed: a shape, not a scale.
+- Semantic colors (action, information, success, warning, destructive) become classes in one helper only, never ad hoc in components.
 - When a design system component fits (button, input, dialog, select...), use it in its pure form. No extra classes unless strictly necessary; keep its base style.
 - No hardcoded utility values (text sizes, tracking, colors, inline styles). Use the system's variants, props and tokens. A class that must be specific is backed by a component in `ui/`.
 - Own components are consistent with the design system and with each other, with escape hatches for composition and passing props to children.

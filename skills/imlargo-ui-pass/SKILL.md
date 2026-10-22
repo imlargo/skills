@@ -8,7 +8,7 @@ metadata:
 
 # UI Pass
 
-> Builds on `imlargo` and `imlargo-frontend`. This skill grants wider scope and autonomy than `imlargo`, and wins where they conflict.
+> Builds on `imlargo`, `imlargo-frontend`, `imlargo-design` and `imlargo-anti-slop`. This skill grants wider scope and autonomy than `imlargo`, and wins where they conflict.
 
 ## Mandate
 
@@ -27,8 +27,7 @@ metadata:
 
 - Modern, sophisticated, clean and clearly designed for the user and each feature, comparable with the best SaaS.
 - Built on the existing design system and tokens: never duplicate primitives or hardcode what the system already solves.
-- No generic "AI slop" look.
-- References: [shadcnblocks admin](https://shadcnblocks-admin.vercel.app), Tailwind UI / Catalyst, Tailark, and [imlargo/sapiencia](https://github.com/imlargo/sapiencia). Take the idea and the level, not their style.
+- Taste and references come from `imlargo-design`; no slop per `imlargo-anti-slop`. Take the references' idea and level, not their style.
 
 ## Report
 

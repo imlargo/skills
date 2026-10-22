@@ -1,16 +1,26 @@
 ---
 name: components
-description: "imlargo's component design rules: size, props, composition, naming and reuse. Load when creating or refactoring UI components."
+description: "imlargo's component design rules: composition, extraction, native elements and labels for closed value sets. Load when creating or refactoring UI components."
 ---
 
 # Components
 
-<!-- TODO: When to split a component, props/events API rules, composition over configuration, naming, and when a component becomes shared. -->
-
 ## Rules
 
-<!-- TODO: One rule per bullet. Lead with the rule, then the reason when it is not obvious. -->
+- Composition over inheritance: small pieces that compose. Inheritance only where it deliberately shares infrastructure (a base service).
+- Keep components focused. When one grows in responsibilities, extract subcomponents or hooks. Reusable logic lives in hooks or utils, never duplicated across components.
+- Use the framework before custom code: navigation hooks, server loading, form handling and the current URL are already solved.
+- Never edit design system primitives or vendored kits. Compose around them with wrappers, props and composition; update a kit by copying in a new version.
+- No native `confirm()`, `alert()` or `prompt()`. Use the confirm dialog component.
+- Every native `<button>` has a `type`.
+- Every closed value set the UI shows has a complete label record (`Record<Role, string>`), so a value added without a label fails to compile instead of rendering a raw `ADMIN`. Labels live with the values they name, never inline in a component.
 
 ## Examples
 
-<!-- TODO: Short Prefer / Avoid snippets for the rules an agent is most likely to get wrong. Delete this section if it adds nothing. -->
+```ts
+// Prefer: a new role without a label fails to compile
+export const ROLE_LABELS: Record<UserRole, string> = {
+  [UserRole.Admin]: 'Administrator',
+  [UserRole.Member]: 'Member',
+}
+```

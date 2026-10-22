@@ -8,7 +8,7 @@ metadata:
 
 # imlargo
 
-> Base skill. Every other `imlargo-*` skill builds on it, and the more specific skill wins on conflict. Git and GitHub mechanics live in `imlargo-workflow`. A repo's own `AGENTS.md` wins over this skill.
+> Base skill. Every other `imlargo-*` skill builds on it, and the more specific skill wins on conflict. Git and GitHub mechanics live in `imlargo-workflow`. Slop patterns to avoid in any output live in `imlargo-anti-slop`. A repo's own `AGENTS.md` wins over this skill.
 
 ## Working With Me
 
