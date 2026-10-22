@@ -1,145 +1,51 @@
 ---
 name: issues
-description: "How imlargo writes and works issues: titles, labels, priority, bug/feature/retroactive templates, evidence, keeping issues current and closing them. Load when creating, refining, triaging, updating or closing an issue."
+description: "Issue titles, labels, priority, bug/feature/retroactive templates, keeping issues current and closing them. Load when creating, updating, triaging or closing an issue."
 ---
 
 # Issues
 
-An issue is the single place where a problem is understood, decided and closed. Anyone (or any agent) should be able to pick it up from the body alone, and its comments should tell what happened until it closed.
+Anyone should be able to pick up an issue from its body, and its comments should tell what happened until it closed.
 
-## Title
+## Title and Labels
 
-State the symptom or outcome, specific enough to understand without opening the issue. Add the concrete scope or impact when it is known.
+Symptom or outcome first, specific, with scope or impact when known. Optional `Area: ` prefix; `(needs repro)` or `(exposed by #N)` when they apply.
 
 ```text
-# Good
-Invoices: exporting a month with refunds shows a negative total (3 workspaces, since 03/12)
-Search results page slow with large catalogs: per-item price lookups, filter state recomputed on every keystroke
-"Assign tags" picker only lets you pick the first two items on small screens (needs repro)
-Webhook retries send duplicate receipts (exposed by #212)
-Account settings: add Disable/Enable account in the danger zone (keeps data, frees the plan slot)
-
-# Bad
-Bug in invoices
-Search is slow
-Fix tags
+Good: Invoices: exporting a month with refunds shows a negative total (3 workspaces, since 03/12)
+Good: "Assign tags" picker only shows the first two items on small screens (needs repro)
+Bad:  Bug in invoices
 ```
 
-- Optional `Area: ` prefix when it helps scanning (`Invoices: ...`, `Billing: ...`).
-- Mark open conditions in parentheses: `(needs repro)`, `(exposed by #N)`.
-- Name the user-visible behavior, not the suspected code.
-
-## Labels
-
-- Exactly one type label: `bug` (something isn't working) or `enhancement` (new feature or request).
-- One or more `area:*` labels for the product areas it touches. Each area label has a description listing what it covers; create a new one only when no existing area fits.
-- `retroactive` for issues opened after the work already merged (see below).
+Labels: exactly one of `bug` / `enhancement`, plus every `area:*` it touches (create a new area only when none fits), plus `retroactive` for work merged before its issue existed.
 
 ## Priority
 
-Put a priority line in the summary of every bug and of urgent requests, with one sentence of impact:
+Every bug and urgent request has `**Priority: P1.** One sentence of impact.` in its summary. With a project, the `Priority` field holds the same value.
 
-```markdown
-**Priority: P1.** Paying customers can't add accounts after a delivery; the only workaround deletes data.
-```
+- `P0`: production down, data loss, security or payments broken. Hotfix now.
+- `P1`: core flow broken for real users, no workaround. Next up.
+- `P2`: degraded, workaround exists, or slow. Soon.
+- `P3`: minor or cosmetic. When there's room.
 
-| Priority | Meaning | Response |
-|----------|---------|----------|
-| `P0` | Production down, data loss, security hole, or payments broken | Drop everything; hotfix now |
-| `P1` | A core flow is broken for real users with no workaround | Next thing to work on |
-| `P2` | Degraded or broken with a workaround, or a slow experience | Planned soon |
-| `P3` | Minor, cosmetic, or nice to have | When there is room |
+## Templates
 
-When the repo has a project, the `Priority` field holds the value and the body line explains it; keep both equal.
+**Bug:** `## Summary` (what, who, since when; quote the source in italics with date and time zone; priority line) → `## Root cause` (`file:line` facts; if unconfirmed, title it "Likely causes (from code, not profiled; ranked)") → `## Evidence` (read-only checks with timestamp and source, numbers, a table for many records) → `## Expected` → `## Suggested fix` (checklist; production data fixes marked as needing owner authorization; product questions for the owner) → `Related: #N`. Use `## Acceptance criteria` instead of a fix when the approach isn't clear yet.
 
-## Bug Template
+**Enhancement:** `## Summary` (request, who asked, quoted with date, why now) → `## Proposal` (checklist, exact UI copy in italics) or `## Scope (to be refined)` → `## Related` → `## Notes`.
 
-```markdown
-## Summary
-What is broken, who is affected and since when. Quote the source with date and time zone:
-customer report, support chat or team chat, in italics.
+**Retroactive:** first line `_Retroactive issue for work that was already merged without an issue._`, then what shipped or the bug, cause, fix (PR, merge date, sha), `**Not fixed:**` leftovers and any user action needed.
 
-**Priority: P2.** One-sentence impact.
+## Keeping It Current
 
-## Root cause
-Facts with `file:line` references. When not confirmed, title the section
-"Likely causes (code analysis, not profiled yet; ranked)" or "Hypothesis (from code)".
-
-## Evidence
-Read-only checks with timestamp and source (prod, logs, metrics). Numbers, and a table
-when several records are affected.
-
-## Expected
-The correct behavior, from the user's point of view.
-
-## Suggested fix
-- [ ] Ordered, checkable steps.
-- [ ] Data fixes or backfills, marked as needing explicit owner authorization.
-- [ ] Measurement to confirm the fix, when it is about performance.
-
-Open questions for the owner, when a product decision is needed.
-
-Related: #N, #M
-```
-
-Use `## Acceptance criteria` instead of `## Suggested fix` when the outcome is clear but the approach is not, especially for bugs that still need a repro.
-
-## Enhancement Template
-
-```markdown
-## Summary
-The request, who asked and where (quoted, with date), and why it matters now.
-
-## Proposal
-- [ ] Checkable scope items, including exact UI copy in italics when there is any.
-
-## Related
-- #N: how it relates.
-
-## Notes
-Constraints, decisions already made, open questions.
-```
-
-Use `## Scope (to be refined)` instead of `## Proposal` when the work still needs discovery or a handoff.
-
-## Retroactive Issues
-
-Work merged without an issue gets one after the fact, labeled `retroactive`, so the history stays traceable.
-
-```markdown
-_Retroactive issue for work that was already merged without an issue._
-
-## Bug            (or: ## What shipped)
-## Cause
-## Fix
-PR #N (merged YYYY-MM-DD HH:MM UTC). Live in `<sha>`.
-
-**Not fixed:** what remains and what decision it needs.
-
-## Customer action
-What affected users must do, if anything.
-```
-
-## Keeping Issues Current
-
-- **Every piece of work has an issue.** Before starting, find or create it. Work that slipped through gets a retroactive issue.
-- **Start.** Assign it to the person doing the work and, if there is a project, move it to `In progress`.
-- **Facts vs hypotheses.** Label every claim: verified (with evidence), inferred from code, or not verified. Never turn a hypothesis into a statement.
-- **Read-only investigation.** Gather evidence from production without writing to it. Any write to production data (backfill, migration, manual fix) needs explicit owner authorization, stated in the issue.
-- **Product decisions belong to the owner.** List them as open questions instead of deciding them in code.
-- **Update with comments, not silent edits.** New findings go in a dated comment: `**Update YYYY-MM-DD HH:MM UTC (prod, read-only).** ...`, or `Second cause, also fixed in #N. ...`. Tick checklist items as they land.
-- **Split, don't stretch.** A separate problem found along the way gets its own issue, linked from both sides.
-- **Waiting on someone.** Say so explicitly (`Moving to **Needs info**: ...`) with what is missing and when it will be closed if nothing arrives.
+- Find or create the issue before starting. On start: assign it, and move it to `In progress` if there is a project.
+- Label claims as verified (with evidence), inferred from code, or not verified.
+- Investigate production read-only. Writes to production data need explicit owner authorization; product decisions go to the owner as questions.
+- New findings go in dated comments, not silent edits: `**Update YYYY-MM-DD HH:MM UTC (prod, read-only).** ...`. Tick checklist items as they land.
+- A separate problem gets its own linked issue. When blocked on someone, say so (`**Needs info**: ...`) with a close-by date.
 
 ## Closing
 
-Merging the PR, or pushing the commit in fast mode, that finishes an issue closes it:
-
-- PRs use `closes #N`; commits pushed to `main` use `Closes #N` in the body. GitHub auto-closes only on the default branch, so after merging into `develop`, close it yourself: `gh issue close N --comment "Fixed by #PR."`
-- Partial work uses `refs #N` and leaves the issue open, with a comment saying what landed and what remains.
-- The closing comment says what shipped in plain language and links the PR; add the release or deployed sha when known.
-- Leftovers move to new linked issues instead of keeping the old one open.
-
-## Milestones
-
-Only in versioned projects: one milestone per upcoming version (`v1.4.0`), closed when it is released. Unversioned projects don't use milestones.
+- The merge or push that finishes the issue closes it: `closes #N` in PRs, `Closes #N` in fast-mode commit bodies. After merging into `develop`, close it yourself (`gh issue close N --comment "..."`), since GitHub only auto-closes on the default branch.
+- The closing comment says what shipped in plain words and links the PR (and sha, when known). Partial work uses `refs #N` and a comment on what remains; leftovers become new linked issues.
+- Milestones only in versioned projects, one per upcoming version.
