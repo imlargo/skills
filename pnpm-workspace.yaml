@@ -1,0 +1,10 @@
+minimumReleaseAgeExcludePrune: true
+trustPolicy: no-downgrade
+shellEmulator: true
+packages: []
+
+allowBuilds:
+  simple-git-hooks: true
+
+onlyBuiltDependencies:
+  - simple-git-hooks

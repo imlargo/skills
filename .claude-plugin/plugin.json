@@ -1,0 +1,12 @@
+{
+  "name": "imlargo",
+  "description": "imlargo's opinionated skills: working style, code conventions, git/release workflow, frontend, backend, Svelte and Go.",
+  "author": {
+    "name": "imlargo",
+    "url": "https://github.com/imlargo"
+  },
+  "homepage": "https://github.com/imlargo/skills",
+  "repository": "https://github.com/imlargo/skills",
+  "license": "MIT",
+  "keywords": ["skills", "conventions", "svelte", "go", "frontend", "backend"]
+}

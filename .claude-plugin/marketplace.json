@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "imlargo",
+  "description": "imlargo's agent skills for Claude Code",
+  "owner": {
+    "name": "imlargo",
+    "url": "https://github.com/imlargo"
+  },
+  "plugins": [
+    {
+      "name": "imlargo",
+      "source": ".",
+      "description": "imlargo's opinionated skills: working style, code conventions, git/release workflow, frontend, backend, Svelte and Go.",
+      "category": "development"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@11.10.0",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "check": "node scripts/check.ts",
+    "new": "node scripts/new.ts",
+    "validate": "claude plugin validate .",
+    "prepare": "simple-git-hooks"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^9.5.1",
+    "@types/node": "^26.6.3",
+    "eslint": "^10.11.0",
+    "eslint-plugin-format": "^2.0.1",
+    "lint-staged": "^17.6.0",
+    "simple-git-hooks": "^2.14.0",
+    "typescript": "^6.0.3"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm check && pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix --no-warn-ignored"
+  }
+}
