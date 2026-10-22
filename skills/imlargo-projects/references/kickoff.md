@@ -18,7 +18,7 @@ Fill everything else (users, data, integrations) from the conversation and exist
 
 ## Define Deliverables
 
-1. **Diagnosis** for the client, in business language: the problem, current process and bottlenecks, the proposed solution, phases with their scope, and what's out.
+1. **Diagnosis** for the client, in business language: how the operation works today and where time is lost, what to build and in what order, the written scope (what's built and what isn't), the plan by phases, and a clear recommendation, even if it's not to build. Cost and time per phase are imlargo's to set; leave them marked.
 2. **Repo docs** for agents: `context.md`, the specs and the roadmap (see [context-file](context-file.md), [requirements](requirements.md)).
 3. **Backlog** on GitHub from the roadmap (see [backlog](backlog.md)).
 

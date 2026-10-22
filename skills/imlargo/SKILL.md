@@ -54,7 +54,7 @@ metadata:
 
 ### Production
 
-- Never deploy unless asked in the current session. When asked, group the changes into one deploy and verify in production afterwards.
+- Never deploy unless asked in the current session. If merging to a branch deploys automatically, a merge is a deploy: check before merging. When asked, group the changes into one deploy and verify in production afterwards.
 - Investigate production read-only. Before any data write, show a dry run and get approval.
 - Prefer a systemic fix (code that keeps data consistent) over a manual one-off fix.
 - Manual steps for imlargo go in a paste-ready file in the repo root: complete env files with values, or scripts that run line by line with no functions. Scripts check state before and after and clean up after themselves. Files holding secrets are gitignored and never committed.
@@ -100,7 +100,7 @@ metadata:
 
 - Fail loudly. A swallowed error, a test that skips or a deploy that only looks successful is a bug.
 - User-facing error messages are safe to show and say what to do. Internal details go to the log.
-- No `console.log` or debug leftovers. Use the project's logger.
+- No `console.*` calls or debug leftovers. Use the project's logger.
 
 ### Testing
 
