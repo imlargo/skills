@@ -12,10 +12,26 @@ description: "When a project is versioned, how versions are bumped and tagged, a
 
 ## Version Scheme
 
-<!-- TODO: Version scheme (SemVer?), what triggers each bump, pre-releases, and the release tooling (e.g. bumpp, release-please, CI on tag). -->
+[Semantic Versioning](https://semver.org), derived from the Conventional Commits since the last tag:
 
+| Commits since last release | `>= 1.0.0` | `0.x` |
+|---|---|---|
+| `!` or `BREAKING CHANGE:` | major | minor |
+| `feat` | minor | patch |
+| `fix`, `perf` | patch | patch |
+| only `docs`, `chore`, `ci`, `test`, `refactor` | no release | no release |
+
+- Start at `0.1.0`. Go to `1.0.0` when the public API is stable (libraries) or at public launch (products).
+- Pre-releases: `1.4.0-beta.1`, `1.4.0-rc.1`.
 - Tag every release on the commit that ships it, as `v{version}` (`v1.4.0`). In formal mode that is the merge commit of the release PR on `main`.
-- Create a GitHub Release from the tag whose notes are the changelog entry for that version.
+
+## Release Steps
+
+1. Move the `[Unreleased]` changelog entries under the new version heading.
+2. Bump and tag: JS/TS with `bumpp` (bumps `package.json`, commits `chore: release v1.4.0`, tags and pushes); Go with an annotated tag (`git tag -a v1.4.0 -m v1.4.0`), remembering that `v2+` needs the `/v2` module path.
+3. Publish from CI on the `v*` tag push, never from a local machine (npm with trusted publishing, no tokens).
+4. Create the GitHub Release with that version's changelog section as notes: `gh release create v1.4.0 --notes-file <section.md>`.
+5. Close the version's milestone.
 
 ## Changelog
 
