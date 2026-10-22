@@ -1,6 +1,6 @@
 ---
 name: imlargo-projects
-description: How imlargo starts, shapes and delivers projects, whether personal, Kora client work, open source or libraries. Covers kickoff and intake questions, project study, requirements, the project context file, initialization from templates, backlog and MVP, and delivery and handoff. Use when starting a new project or repo, taking a new client or freelance job, writing requirements or a context file, planning a backlog, or preparing a delivery.
+description: How imlargo starts, shapes and delivers projects, whether Kora client work, own products, libraries or prototypes. Covers kickoff and the Define phase, specs, context docs and handoffs, templates and repo setup, backlog and MVP, turning team or support chats into a verified backlog, and delivery. Use when starting a new project, client or repo, writing specs, context docs, ADRs or handoffs, planning or syncing a backlog, converting chats or support threads into issues, or preparing a delivery.
 metadata:
   author: imlargo
   version: "2026.10.22"
