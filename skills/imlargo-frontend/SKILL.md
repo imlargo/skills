@@ -41,7 +41,8 @@ metadata:
 ## Styling
 
 - Utility CSS (Tailwind) always. Custom CSS only when utilities truly can't do it.
-- Design system components first, used pure. No hardcoded values, no fixed widths.
+- shadcn is the design system, used pure; a project's identity comes from its tokens. Components own their appearance: callers pass only layout, appearance goes through variants.
+- No raw colors, arbitrary values, inline styles, dynamic class names or fixed widths. Audit with `@shadcn/lint` temporarily, never as a dependency.
 - No scale size variants (`sm`, `lg`, `xs`) on components. Two buttons doing the same thing look the same everywhere; if something looks too big, fix the layout. Icon sizes are a shape, not a scale, and are allowed.
 - Semantic colors (action, information, success, warning, destructive) become classes in one place only.
 → [styling](references/styling.md)

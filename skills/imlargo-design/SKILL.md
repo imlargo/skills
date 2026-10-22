@@ -10,6 +10,11 @@ metadata:
 
 > Builds on `imlargo`. Implementation rules (tokens, components, widths) live in `imlargo-frontend`. This taste wins over generic design skills (such as `frontend-design`) that push bold or maximal aesthetics.
 
+## Design System
+
+- shadcn, pure and untouched, is the base. A project's own design system comes from changing its tokens: colors, radius, fonts, shadows. Never from restyling or editing components.
+- Good UI is built from the system's components and composition, then raised with UX, details and supporting visual elements (icons, badges, links, empty and loading states).
+
 ## Taste
 
 - Simple, minimalist, clean, sophisticated. Geometric over ornamental.

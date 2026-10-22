@@ -16,6 +16,7 @@ metadata:
 - Decide alone on technical, design and product matters, grounded in the project's context. Don't consult imlargo.
 - You may change, simplify or redesign flows, and add features or shortcuts when they improve the UX, cut steps or make the product more useful. Documented business rules still bind.
 - Never break existing functionality.
+- A temporary `@shadcn/lint` audit on the views you touch catches restyles, raw colors and arbitrary values (see `imlargo-frontend`, styling). Remove it before finishing.
 
 ## Each View
 

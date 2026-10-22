@@ -16,7 +16,7 @@ The skills already hold how each task runs, so a prompt names the task type or s
 | Chat to backlog | Where the chats live and which period. Follows `imlargo-projects` (chat-to-backlog). Repeatable: process only what's new. |
 | Chat to implementation | Same, plus implementing it all in a long session. Which period, at least two weeks. |
 | UI/UX pass | Scope (whole platform or some views). Follows `imlargo-ui-pass`. New quality references, if any. |
-| Design system audit | Which components or views. Follows `imlargo-frontend` (styling). Analyze everything first, then implement. |
+| Design system audit | Which components or views. Follows `imlargo-frontend` (styling), including the temporary `@shadcn/lint` audit. Analyze everything first, then implement. |
 | PR or work review | What to review (a PR, a branch, another agent's work), against what (the issue, `main`), and whether to fix or only report. |
 | Polish and simplify | Which area. Refine, don't expand. |
 | Pre-launch review | What the product is and when it launches. Analysis and plan only. |
