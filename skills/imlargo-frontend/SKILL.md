@@ -3,7 +3,7 @@ name: imlargo-frontend
 description: imlargo's frontend rules, independent of framework. Covers app architecture (services, contracts, environment, routes), components, state and data loading, forms, errors, styling and design system use, and the checklist a view must pass before it counts as done. Use when building, reviewing or scaffolding any web UI, together with the framework skill (e.g. imlargo-svelte).
 metadata:
   author: imlargo
-  version: "2026.10.22"
+  version: "2026.10.23"
 ---
 
 # Frontend

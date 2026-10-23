@@ -3,7 +3,7 @@ name: imlargo
 description: imlargo's working style and code conventions, independent of language or framework. Covers when to decide alone and when to ask, analysis before code, scope, verification, communication and reports, production safety, code organization, abstraction, types, comments, errors, dependencies, testing, docs and writing voice. Use for any coding task in imlargo's projects (implementing a feature, fixing a bug, refactoring, reviewing, investigating, writing docs or issues), even when the request is a single line like "fix this" or "continue".
 metadata:
   author: imlargo
-  version: "2026.10.22"
+  version: "2026.10.23"
 ---
 
 # imlargo
@@ -92,7 +92,8 @@ metadata:
 ### Types and Values
 
 - Never `any`. Use `unknown` and narrow it.
-- No magic strings or numbers: use typed constants or enums.
+- No magic strings or numbers, ever. Every fixed value (statuses, roles, keys, routes, API paths) is a typed constant, following the repo's pattern (`as const` objects, enums).
+- Before reusing or merging a similar existing type, check it's the same domain concept. Two concepts that share some values stay separate.
 - Encode invariants in types or tests, not prose. A wrong value should fail to compile.
 
 ### Comments
@@ -126,6 +127,7 @@ metadata:
 - TypeScript in `strict` mode. Zero warnings: anything reported is yours to fix, not a baseline.
 - Formatting follows the repo's config; it isn't a personal constant.
 - A rule the linter can't express goes in `AGENTS.md`, not in a custom lint setup.
+- The whole project stays at zero lint and type errors, not just the new code. Fix the cause, since a rule sometimes reveals a logic bug. A disable comment only for a one-off case, with a comment saying why it's safe.
 
 ## Writing
 

@@ -8,6 +8,7 @@ description: "imlargo's styling rules: shadcn as the design system with custom t
 ## The Design System
 
 - The design system is shadcn, used pure. The project's identity comes from its tokens (colors, radius, fonts, shadows in the theme stylesheet), never from editing or restyling components.
+- Coral comes first when it has the component; shadcn, used pure, covers the rest.
 - Utility CSS (Tailwind) always. Custom CSS only when it's truly impossible with utilities.
 - Own components are consistent with shadcn and with each other, with escape hatches for composition and passing props to children.
 

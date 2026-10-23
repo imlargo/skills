@@ -17,7 +17,7 @@ description: "How imlargo handles state, data loading, queries, caching and form
 - Data the user searches, filters or edits in place is loaded by the page itself through a query object.
 - A query tells a new search from a refresh: a new search shows the loading state and replaces the old rows; a refresh after a write keeps them. Leaving stale rows clickable during a new search is worse than showing nothing.
 - Fetchers take an `AbortSignal` and pass it to the service.
-- List endpoints answer one paginated response shape.
+- List endpoints answer one paginated response shape, typed once with the shared generic types. Never redefine response types locally.
 - No client-side cache until a third place needs one. Then it's one module with its own invalidation, never a storage key invented inside a service.
 
 ## Forms
