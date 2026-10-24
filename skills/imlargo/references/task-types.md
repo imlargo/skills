@@ -11,8 +11,9 @@ Triggered by "analyze", "diagnose", "audit", "don't implement yet".
 
 1. Read the repo, its docs, recent commits and open issues. Use MCPs and official docs.
 2. Compare against industry standards and references, including other ecosystems.
-3. Deliver findings, causes and a prioritized, phased plan. Separate verified facts from inferences. Stay within the project's scope.
-4. Stop. No code, no commits, no staging. Implementation comes in a later message.
+3. Every finding has evidence (`file:line`), impact, effort (S/M/L), the risk of the fix and confidence. Open the cited code yourself before reporting a subagent's finding: they over-report. A trade-off recorded in an ADR or the docs is a decision, not a finding.
+4. Deliver findings ranked by impact over effort, with direction ideas (features, where to take the project) apart from the problems. Say what wasn't audited, and prefer "not worth doing" to padding the list. Stay within the project's scope.
+5. Stop. No code, no commits, no staging. Implementation comes in a later message.
 
 ## Bug Fix
 
@@ -44,7 +45,9 @@ What exists is what exists: refine it, don't expand it. Hunt patches, accidental
 ## Research
 
 - Compare real options pragmatically: the few that fit, with trade-offs. No hype.
-- Verify claims in current docs or sources before stating them.
+- Go to primary sources (official docs, source code, specs, first-party APIs), not write-ups of them, and cite each claim's source.
+- When the research should persist, save it as one Markdown file where the repo keeps notes.
+- Delegate long reading to a subagent and keep working.
 - When imlargo points to a reference repo or product, take the idea and the quality bar, not its style or code.
 
 ## Architecture
