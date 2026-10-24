@@ -90,6 +90,7 @@ Then write the content, add the skill to the table above and, if it builds on ot
 ## Credits
 
 - The pull request workflow, PR body guide, visual evidence workflow and commit granularity rules in `imlargo-workflow` are adapted from [antfu/skills](https://github.com/antfu/skills) (MIT), which in turn adapted them from [moeru-ai/airi](https://github.com/moeru-ai/airi) (MIT).
+- The issue triage workflow in `imlargo-workflow` is adapted from [antfu/skills](https://github.com/antfu/skills) (MIT). The handoff, research and audit rules take ideas from [mattpocock/skills](https://github.com/mattpocock/skills) and [shadcn/improve](https://github.com/shadcn/improve) (MIT).
 
 ## License
 
