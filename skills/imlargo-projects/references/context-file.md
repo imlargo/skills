@@ -24,6 +24,7 @@ Larger projects split the docs instead of growing one file:
 - Record relevant decisions as ADRs: context, decision, alternatives considered, consequences.
 - A handoff lets someone take the project over without depending on imlargo: what was built, what decisions were made and why, where things stand, and what's next.
 - When a decision isn't clear from the code or the conversations, ask instead of inventing a reason.
+- A session handoff for another agent covers where the work stands and what's next, tailored to what the next session will do. It references existing artifacts (specs, ADRs, issues, PRs, commits) by path or URL instead of copying them, names the skills the next agent should load, and contains no secrets or personal data.
 
 ## Rules
 
