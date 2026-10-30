@@ -31,7 +31,7 @@ Only `skills/` is distributed. Anything that is not skill content (templates, no
 | Layer | Skills | Contains |
 |-------|--------|----------|
 | Base | `imlargo`, `imlargo-anti-slop` | How imlargo works, code conventions and output quality valid everywhere |
-| Process | `imlargo-projects`, `imlargo-workflow`, `imlargo-prompting` | How projects start and ship; git and GitHub mechanics; prompts for agents |
+| Process | `imlargo-projects`, `imlargo-kora`, `imlargo-workflow`, `imlargo-prompting` | How projects start and ship; git and GitHub mechanics; prompts for agents |
 | Domain | `imlargo-frontend`, `imlargo-backend`, `imlargo-design`, `imlargo-ui-pass` | Rules independent of framework or language, and domain-wide task skills |
 | Technology | `imlargo-svelte`, `imlargo-go` | How imlargo uses that stack, never a tutorial on it |
 

@@ -44,6 +44,7 @@ imlargo                      how I work + code conventions (always relevant)
 ├── imlargo-anti-slop        no AI slop in any output; routes to the right skills
 ├── imlargo-prompting        everyday needs into ready-to-paste agent prompts
 ├── imlargo-projects         kickoff, requirements, context, setup, backlog, delivery
+│   └── imlargo-kora         client work: positioning, first meeting, proposals, engagement models
 ├── imlargo-workflow         git and GitHub: branches, commits, versions, PRs, issues, boards
 ├── imlargo-design           visual taste: simple, minimalist, sophisticated
 ├── imlargo-frontend         frontend rules, any framework
@@ -59,6 +60,7 @@ imlargo                      how I work + code conventions (always relevant)
 | [imlargo-anti-slop](skills/imlargo-anti-slop) | Guard against AI slop in anything the agent produces (code, UI, design, text); routes each output to its skill |
 | [imlargo-prompting](skills/imlargo-prompting) | Turn an everyday need into one ready-to-paste prompt for a coding agent |
 | [imlargo-projects](skills/imlargo-projects) | How projects start and ship: kickoff, requirements, context file, templates, backlog, delivery |
+| [imlargo-kora](skills/imlargo-kora) | Client work as Kora or independently: positioning, first meeting, proposals, engagement models |
 | [imlargo-workflow](skills/imlargo-workflow) | Git and GitHub: branches, commits, versioning and releases, PRs, issues, project boards |
 | [imlargo-design](skills/imlargo-design) | Visual taste: simple, minimalist, sophisticated, enterprise SaaS level |
 | [imlargo-frontend](skills/imlargo-frontend) | Frontend rules: architecture, components, state, styling, a11y, performance |
