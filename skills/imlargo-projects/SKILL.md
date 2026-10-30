@@ -3,7 +3,7 @@ name: imlargo-projects
 description: How imlargo starts, shapes and delivers projects, whether Kora client work, own products, libraries or prototypes. Covers kickoff and the Define phase, specs, context docs and handoffs, templates and repo setup, backlog and MVP, turning team or support chats into a verified backlog, and delivery. Use when starting a new project, client or repo, writing specs, context docs, ADRs or handoffs, planning or syncing a backlog, converting chats or support threads into issues, or preparing a delivery.
 metadata:
   author: imlargo
-  version: "2026.10.24"
+  version: "2026.10.30"
 ---
 
 # Projects
@@ -29,7 +29,7 @@ metadata:
 
 | Type | In short |
 |------|----------|
-| Kora client | Custom software for a business. Full Define phase, delivery per phase, production quality. |
+| Kora client | Custom software for a business. Full Define phase, delivery per phase, production quality. Selling, proposals and terms: `imlargo-kora`. |
 | Own product | imlargo's products. imlargo decides scope and pace; production or prototype, stated up front. |
 | Library / open source | Public API, versioning, changelog, docs, npm publishing. |
 | Prototype / PoC | Validates an idea fast on the template. No tests or CI; still clean code. |

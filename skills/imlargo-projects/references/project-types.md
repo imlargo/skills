@@ -18,6 +18,9 @@ Work that isn't Kora's (a team or company product, a freelance job outside Kora)
 
 ## Kora Clients
 
+Positioning, the first meeting, proposals and engagement models live in `imlargo-kora`.
+
+
 - The decision maker is usually not technical: talk about business results, never the stack.
 - Kora tells the client no when what they ask isn't what they need. Flag it to imlargo instead of building it.
 - Built to last: documented, ordered, and able to run without Kora. No black boxes.
