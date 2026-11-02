@@ -21,7 +21,7 @@ description: "How imlargo initializes a repository: which template to start from
 | TypeScript library | [imlargo/typescript-library-template](https://github.com/imlargo/typescript-library-template) |
 | Vue / Nuxt app | [klima-open-source/nuxt-template](https://github.com/klima-open-source/nuxt-template) |
 | UI components | [coral](https://github.com/imlargo/coral), installed into projects, not cloned |
-| Backend | Go, with Postgres and Redis when needed |
+| Backend (Go) | [imlargo/medusa](https://github.com/imlargo/medusa): copy `app/`, built on the Medusa toolkit; Postgres and Redis when needed |
 
 ## Deploy
 
