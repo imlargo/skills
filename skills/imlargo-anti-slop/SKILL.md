@@ -3,7 +3,7 @@ name: imlargo-anti-slop
 description: imlargo's guard against AI slop in anything an agent produces (frontend and backend code, APIs, tests, scripts, config, UI, visual design, SVGs, docs, issues, PRs, commits, chat answers, reports and messages). Lists the patterns that make output look machine-generated and routes each kind of output to the skill that holds its rules. Use whenever producing or reviewing any output for imlargo, before handing work back, and when imlargo says "no slop", "sin AI slop" or complains something looks generic.
 metadata:
   author: imlargo
-  version: "2026.10.22"
+  version: "2026.11.02"
 ---
 
 # Anti-Slop
@@ -71,7 +71,23 @@ Never let it touch code, code blocks, tables or quoted text. If the skill isn't 
 - Headings and bullets on content that is a two-line answer. Bold on every other phrase.
 - Lists of bare noun phrases, rule-of-three padding, hedging stacks ("could potentially").
 - Claims without evidence ("fixed", "safe", "production-ready") when nothing was verified.
+- Feelings instead of mechanisms: "SQL you can read" says nothing; "`.toSQL()` returns the exact string sent" does. Name the mechanism or a number. A sentence that could appear unchanged in another project's docs says nothing about this one: cut it.
+
+## Docs, Runbooks and Instructions
+
+- Condition before command: "If the build fails, read the log."
+- "Must" for what's required, "can" for what's optional. Never "should": a required one becomes "must", an optional one is deleted.
+- One term per concept for the whole document; don't rotate synonyms.
+- Define a term the first time it appears, in a few words. Not product or standard names.
+- Each step names what it depends on: the host it runs on, the flag, the previous step. "Restart the `sync` service on the host that runs the job", not "restart the service".
+- Warnings lead with the command or condition, then the risk: "Don't run this against production. It deletes rows."
 
 ## Before Handing Back
 
 Scan the output against these lists and fix what you find. If a pattern is deliberate (the brand uses a gradient, a constant is uppercase), keep it.
+
+<!--
+Source references:
+- https://github.com/AminBlg/SimpleEnglish/blob/main/skills/simple-english/SKILL.md (MIT)
+- https://github.com/cursor/plugins/blob/main/pstack/skills/unslop/SKILL.md
+-->
