@@ -22,6 +22,12 @@ A component owns its spacing, typography, color and shape. Callers only place it
 - Add a variant to a `ui/` component only when the design explicitly calls for one, never to make one call site work.
 - No scale size variants (`size="sm"`, `"lg"`, `"xs"`): keep the base size. Two buttons doing the same thing on different screens look the same, and once a size enters one place it must be remembered everywhere. If something looks too big or small, the layout around it is the problem. `size="icon"` and its variants are allowed: a shape, not a scale. This is stricter than shadcn's defaults on purpose.
 
+## CSS Before JavaScript
+
+- Layout that depends on the component's space uses container queries (`@container`), not viewport breakpoints or resize observers.
+- Styling that depends on state or children uses `:has()` and attribute or state variants (`has-*`, `data-*`, `aria-*`), not a script toggling classes.
+- Native form colors come from `accent-color` tied to the tokens.
+
 ## Values
 
 - **No raw colors** (`bg-pink-500`, hex): only theme tokens. Semantic colors (action, information, success, warning, destructive) become classes in one helper.
