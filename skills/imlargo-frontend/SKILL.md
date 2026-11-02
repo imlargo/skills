@@ -3,7 +3,7 @@ name: imlargo-frontend
 description: imlargo's frontend rules, independent of framework. Covers app architecture (services, contracts, environment, routes), components, state and data loading, forms, errors, styling and design system use, and the checklist a view must pass before it counts as done. Use when building, reviewing or scaffolding any web UI, together with the framework skill (e.g. imlargo-svelte).
 metadata:
   author: imlargo
-  version: "2026.10.23"
+  version: "2026.11.02"
 ---
 
 # Frontend
@@ -45,6 +45,7 @@ metadata:
 - No raw colors, arbitrary values, inline styles, dynamic class names or fixed widths. Audit with `@shadcn/lint` temporarily, never as a dependency.
 - No scale size variants (`sm`, `lg`, `xs`) on components. Two buttons doing the same thing look the same everywhere; if something looks too big, fix the layout. Icon sizes are a shape, not a scale, and are allowed.
 - Semantic colors (action, information, success, warning, destructive) become classes in one place only.
+- Modern CSS before JavaScript: container queries, `:has()`, nesting and `accent-color` replace scripts for layout and state styling.
 → [styling](references/styling.md)
 
 ## Views
@@ -67,6 +68,7 @@ WCAG AA basics on every screen:
 - Never block a navigation on slow data. Skeletons match the final layout so nothing jumps.
 - Batch writes and queries: never one database or API call per item in a loop. Serverless CPU limits turn that into failures.
 - Check what a dependency adds to the bundle before adding it; prefer the platform.
+- Ship less JavaScript. Choose rendering per route: prerender content that doesn't change per user, render on the server what's personalized, and keep client-side interactivity to the parts that need it.
 
 ## Responsive and Theming
 

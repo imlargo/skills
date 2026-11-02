@@ -3,7 +3,7 @@ name: imlargo
 description: imlargo's working style and code conventions, independent of language or framework. Covers when to decide alone and when to ask, analysis before code, scope, verification, communication and reports, production safety, code organization, abstraction, types, comments, errors, dependencies, testing, docs and writing voice. Use for any coding task in imlargo's projects (implementing a feature, fixing a bug, refactoring, reviewing, investigating, writing docs or issues), even when the request is a single line like "fix this" or "continue".
 metadata:
   author: imlargo
-  version: "2026.10.24"
+  version: "2026.11.02"
 ---
 
 # imlargo
@@ -17,7 +17,7 @@ metadata:
 - **Decide alone** anything simple with an obvious answer. Never ask again for permission already given.
 - **Business rules are critical.** Look for the answer first (code, docs, `context.md`, issues). If it's still ambiguous, ask. Never invent a business rule: incomplete beats invented.
 - **Ask before** complex technical decisions, breaking an established project rule, widening the scope (related bugs, extra features), adding a dependency, or writing to production data.
-- Batch questions as multiple choice with your recommended option first. Don't ask what the code can answer.
+- Batch questions as multiple choice with your recommended option first. Don't ask what the code can answer. For a full interview, see [interview](references/interview.md).
 - Think a proposal through before making it: anticipate what imlargo would object to (cost, noise, risk) and settle it up front. Optional extras that cost time or add noise (screenshots, extra phases, long reports) are off unless asked.
 - Use the access the project gives you (database URL in `.env`, logs, CLIs) to check facts read-only instead of asking imlargo.
 
@@ -43,6 +43,7 @@ metadata:
 - Run the project's check gate before calling work done, and read the output.
 - Done means used: an endpoint nothing calls, or a component nothing renders, is not done.
 - Report what you didn't verify. An unproven result is a gap, not a pass.
+- Review AI-written code, your own included, twice as hard as human code: invented APIs, plausible but wrong logic, hidden complexity, security holes and silent changes hide behind code that reads well. See [code-review](references/code-review.md).
 
 ### Communication
 
@@ -143,4 +144,6 @@ Applies to docs, issues, PRs and messages to clients or the team.
 | Topic | Description | Reference |
 |-------|-------------|-----------|
 | Task Types | How to run analysis, bug fix, feature, backlog, polish, research, architecture, migration and cleanup tasks | [task-types](references/task-types.md) |
-| Code Review | Self-review checklist before handing back, and reviewing others' work | [code-review](references/code-review.md) |
+| Code Review | Self-review checklist, AI-written code, reviewing others' work on spec and standards | [code-review](references/code-review.md) |
+| Simplify | Cutting a diff to the smallest correct change with an ablation study | [simplify](references/simplify.md) |
+| Interview | Interviewing imlargo in rounds of multiple-choice questions until decisions are settled | [interview](references/interview.md) |

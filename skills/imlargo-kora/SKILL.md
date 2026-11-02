@@ -3,7 +3,7 @@ name: imlargo-kora
 description: How imlargo works with clients, as Kora (imlargo's software studio) or as an independent senior engineer. Covers Kora's positioning against consultancies, software factories and agencies, the ideal client and the no-client, the first meeting, the diagnosis, the proposal, the two engagement models and how each is paid, scope and change management, ownership, and the client-facing voice. Use when a new client or lead comes in, preparing a first meeting, diagnosis, proposal, quote or contract terms, writing anything a client reads (proposals, diagnoses, emails, WhatsApp messages, Kora site copy), or deciding whether to take a project.
 metadata:
   author: imlargo
-  version: "2026.10.30"
+  version: "2026.11.02"
 ---
 
 # Kora
@@ -57,3 +57,4 @@ Plain, direct, with criterion: the senior advisor who also builds. Short sentenc
 | Engagement Models | Kora's diagnosis, phases and partner plan vs the independent monthly model; payment terms, ownership, changes | [engagement-models](references/engagement-models.md) |
 | First Meeting | How the first meeting runs, what to ask and how it ends | [first-meeting](references/first-meeting.md) |
 | Proposal | Structure and writing rules for a proposal a non-technical decision maker can sign | [proposal](references/proposal.md) |
+| Questionnaire | Turning the client's open decisions into a questionnaire they fill in | [questionnaire](references/questionnaire.md) |
