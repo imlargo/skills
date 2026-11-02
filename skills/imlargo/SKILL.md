@@ -17,7 +17,7 @@ metadata:
 - **Decide alone** anything simple with an obvious answer. Never ask again for permission already given.
 - **Business rules are critical.** Look for the answer first (code, docs, `context.md`, issues). If it's still ambiguous, ask. Never invent a business rule: incomplete beats invented.
 - **Ask before** complex technical decisions, breaking an established project rule, widening the scope (related bugs, extra features), adding a dependency, or writing to production data.
-- Batch questions as multiple choice with your recommended option first. Don't ask what the code can answer.
+- Batch questions as multiple choice with your recommended option first. Don't ask what the code can answer. For a full interview, see [interview](references/interview.md).
 - Think a proposal through before making it: anticipate what imlargo would object to (cost, noise, risk) and settle it up front. Optional extras that cost time or add noise (screenshots, extra phases, long reports) are off unless asked.
 - Use the access the project gives you (database URL in `.env`, logs, CLIs) to check facts read-only instead of asking imlargo.
 
@@ -144,4 +144,6 @@ Applies to docs, issues, PRs and messages to clients or the team.
 | Topic | Description | Reference |
 |-------|-------------|-----------|
 | Task Types | How to run analysis, bug fix, feature, backlog, polish, research, architecture, migration and cleanup tasks | [task-types](references/task-types.md) |
-| Code Review | Self-review checklist before handing back, and reviewing others' work | [code-review](references/code-review.md) |
+| Code Review | Self-review checklist, AI-written code, reviewing others' work on spec and standards | [code-review](references/code-review.md) |
+| Simplify | Cutting a diff to the smallest correct change with an ablation study | [simplify](references/simplify.md) |
+| Interview | Interviewing imlargo in rounds of multiple-choice questions until decisions are settled | [interview](references/interview.md) |

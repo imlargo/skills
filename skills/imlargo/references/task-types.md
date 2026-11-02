@@ -40,7 +40,7 @@ Triggered by "analyze", "diagnose", "audit", "don't implement yet".
 
 ## Polish and Simplify
 
-What exists is what exists: refine it, don't expand it. Hunt patches, accidental complexity, duplication and drift from the project's patterns. Same behavior, less code.
+What exists is what exists: refine it, don't expand it. Hunt patches, accidental complexity, duplication and drift from the project's patterns. Same behavior, less code. For a diff or PR, use the ablation study in [simplify](simplify.md).
 
 ## Research
 

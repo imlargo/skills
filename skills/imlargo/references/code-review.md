@@ -38,6 +38,16 @@ Code an agent wrote, your own included, gets twice the scrutiny: it reads as pla
 ## Reviewing Others' Work
 
 - Read the whole diff and the issue it closes, not just the summary. Summaries overclaim.
+- Review on two axes and report them apart:
+  - **Spec:** does it do what the issue or spec asked? Missing pieces, extra scope, behavior that differs from what was asked.
+  - **Standards:** does it follow the repo's documented rules (`AGENTS.md`, `CONTRIBUTING.md`) and these skills? Cite the rule broken.
+- For a large diff, run each axis in its own subagent with a fresh context, then merge the findings.
+- Code smells are judgment calls, never violations, and a documented repo rule overrides them: unclear names, duplicated logic, a function reaching into another object's data (feature envy), fields that always travel together (data clumps), a string standing in for a domain concept (primitive obsession), the same switch repeated, one change scattered across many files (shotgun surgery), one file changing for unrelated reasons, speculative generality, long call chains, middlemen that only delegate.
 - Focus on code quality and architecture, not UI/UX, unless asked. Include maintainability risks and tech debt the change introduces.
 - Report findings as: location, what is wrong, why it's a problem, the fix. Blocking first.
 - Don't restate what's fine. If nothing blocks, say so in one line.
+
+<!--
+Source references:
+- https://github.com/mattpocock/skills/blob/main/skills/engineering/code-review/SKILL.md (MIT)
+-->
