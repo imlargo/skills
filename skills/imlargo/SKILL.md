@@ -3,7 +3,7 @@ name: imlargo
 description: imlargo's working style and code conventions, independent of language or framework. Covers when to decide alone and when to ask, analysis before code, scope, verification, communication and reports, production safety, code organization, abstraction, types, comments, errors, dependencies, testing, docs and writing voice. Use for any coding task in imlargo's projects (implementing a feature, fixing a bug, refactoring, reviewing, investigating, writing docs or issues), even when the request is a single line like "fix this" or "continue".
 metadata:
   author: imlargo
-  version: "2026.10.24"
+  version: "2026.11.02"
 ---
 
 # imlargo
@@ -43,6 +43,7 @@ metadata:
 - Run the project's check gate before calling work done, and read the output.
 - Done means used: an endpoint nothing calls, or a component nothing renders, is not done.
 - Report what you didn't verify. An unproven result is a gap, not a pass.
+- Review AI-written code, your own included, twice as hard as human code: invented APIs, plausible but wrong logic, hidden complexity, security holes and silent changes hide behind code that reads well. See [code-review](references/code-review.md).
 
 ### Communication
 
