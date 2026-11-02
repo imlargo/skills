@@ -16,7 +16,7 @@ description: "Goroutine ownership, worker pools, mutexes and channels, and grace
 
 ## Shutdown
 
-In medusa, `lifecycle` does this for its servers and jobs. Outside it:
+When the project has a lifecycle manager (medusa's `lifecycle`), it does this. Otherwise:
 
 1. `signal.NotifyContext(ctx, os.Interrupt, syscall.SIGTERM)`.
 2. Run the server in a goroutine; treat `http.ErrServerClosed` as normal.
