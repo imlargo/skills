@@ -16,7 +16,7 @@ metadata:
 |-----------|--------|
 | Any code | `imlargo` |
 | Frontend code | `imlargo-frontend` plus the stack's skill (`imlargo-svelte`, with its Svelte MCP autofixer) |
-| Backend code | `imlargo-backend` plus the stack's skill (`imlargo-go`) |
+| Backend code | `imlargo-go`, plus the repo's `AGENTS.md` (medusa) |
 | Visual design, illustrations, SVGs | `imlargo-design` |
 | Commits, PRs, issues, releases | `imlargo-workflow` |
 | Prompts for agents | `imlargo-prompting` |

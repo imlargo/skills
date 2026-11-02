@@ -50,8 +50,7 @@ imlargo                      how I work + code conventions (always relevant)
 ├── imlargo-frontend         frontend rules, any framework
 │   ├── imlargo-svelte       Svelte / SvelteKit, my way
 │   └── imlargo-ui-pass      deep UI/UX pass, view by view
-└── imlargo-backend          backend rules, any language
-    └── imlargo-go           Go, my way
+└── imlargo-go               Go and backends, on top of medusa's own docs
 ```
 
 | Skill | Description |
@@ -64,10 +63,9 @@ imlargo                      how I work + code conventions (always relevant)
 | [imlargo-workflow](skills/imlargo-workflow) | Git and GitHub: branches, commits, versioning and releases, PRs, issues, project boards |
 | [imlargo-design](skills/imlargo-design) | Visual taste: simple, minimalist, sophisticated, enterprise SaaS level |
 | [imlargo-frontend](skills/imlargo-frontend) | Frontend rules: architecture, components, state, styling, a11y, performance |
-| [imlargo-backend](skills/imlargo-backend) | Backend rules: architecture, API design, persistence, observability, security |
 | [imlargo-ui-pass](skills/imlargo-ui-pass) | Deep UI/UX pass, view by view, to an enterprise SaaS level |
 | [imlargo-svelte](skills/imlargo-svelte) | How I work with Svelte and SvelteKit |
-| [imlargo-go](skills/imlargo-go) | How I write Go |
+| [imlargo-go](skills/imlargo-go) | How I write Go and backends; backend decisions live in medusa |
 
 > [!TIP]
 > Skills load on demand and can be missed. To make one always apply in a project, reference it from that project's `CLAUDE.md` / `AGENTS.md` (e.g. "Follow the `imlargo` and `imlargo-svelte` skills").
