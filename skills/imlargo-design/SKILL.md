@@ -3,7 +3,7 @@ name: imlargo-design
 description: imlargo's visual design taste for interfaces, illustrations and assets. Simple, minimalist, sophisticated and restrained, at the level of the best enterprise SaaS. Covers typography, color, effects, icons, illustrations, content formatting and quality references. Use whenever designing or styling UI, choosing colors, effects or layouts, making illustrations or SVGs, or judging whether something looks good, together with `imlargo-frontend`.
 metadata:
   author: imlargo
-  version: "2026.10.22"
+  version: "2026.11.18"
 ---
 
 # Design
@@ -17,8 +17,8 @@ metadata:
 
 ## Brand
 
-- Each product follows its own brand: palette, density and personality come from the client's brand, expressed through tokens.
-- When a product has no brand of its own, use imlargo's taste below. Kora's own brand: contained palette of blacks, grays and white, lots of air, strong typographic hierarchy, subtle animation.
+- Each product follows its own brand: palette, density and personality come from the product's brand, expressed through tokens.
+- When a product has no brand of its own, use imlargo's taste below.
 - Data-heavy views (tables, dashboards) stay scannable whatever the brand.
 
 ## Taste

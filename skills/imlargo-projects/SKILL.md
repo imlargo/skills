@@ -1,9 +1,9 @@
 ---
 name: imlargo-projects
-description: How imlargo starts, shapes and delivers projects, whether Kora client work, own products, libraries or prototypes. Covers kickoff and the Define phase, specs, context docs and handoffs, templates and repo setup, backlog and MVP, turning team or support chats into a verified backlog, and delivery. Use when starting a new project, client or repo, writing specs, context docs, ADRs or handoffs, planning or syncing a backlog, converting chats or support threads into issues, or preparing a delivery.
+description: How imlargo starts, shapes and delivers projects, whether own products, libraries, prototypes or work inside a team. Covers kickoff and the Define phase, specs, context docs and handoffs, templates and repo setup, backlog and MVP, turning team or support chats into a verified backlog, and delivery. Use when starting a new project or repo, writing specs, context docs, ADRs or handoffs, planning or syncing a backlog, converting chats or support threads into issues, or preparing a delivery.
 metadata:
   author: imlargo
-  version: "2026.10.30"
+  version: "2026.11.18"
 ---
 
 # Projects
@@ -20,7 +20,7 @@ metadata:
 
 ## Lifecycle
 
-1. **Define:** kickoff interview, then the diagnosis and the repo docs (context, specs, roadmap). Nothing is built before this exists. → [kickoff](references/kickoff.md), [requirements](references/requirements.md)
+1. **Define:** kickoff interview, then the repo docs (context, specs, roadmap). Nothing is built before this exists. → [kickoff](references/kickoff.md), [requirements](references/requirements.md)
 2. **Set up:** repo from the template, docs committed, backlog on GitHub. → [setup](references/setup.md), [backlog](references/backlog.md)
 3. **Build:** phase by phase, each one shipped and visible before the next.
 4. **Deliver and evolve:** handoff per phase; the software keeps growing afterwards. → [delivery](references/delivery.md)
@@ -29,10 +29,10 @@ metadata:
 
 | Type | In short |
 |------|----------|
-| Kora client | Custom software for a business. Full Define phase, delivery per phase, production quality. Selling, proposals and terms: `imlargo-kora`. |
 | Own product | imlargo's products. imlargo decides scope and pace; production or prototype, stated up front. |
 | Library / open source | Public API, versioning, changelog, docs, npm publishing. |
 | Prototype / PoC | Validates an idea fast on the template. No tests or CI; still clean code. |
+| Team or company work | Follows that team's repo, process and `AGENTS.md`; this skill fills only what the repo doesn't define. |
 
 Details in [project-types](references/project-types.md).
 
@@ -48,7 +48,7 @@ Details in [project-types](references/project-types.md).
 
 | Topic | Description | Reference |
 |-------|-------------|-----------|
-| Project Types | Personal, Kora client, open source and library differences | [project-types](references/project-types.md) |
+| Project Types | Own product, library and prototype differences | [project-types](references/project-types.md) |
 | Kickoff | Intake questions, project study, go/no-go decisions | [kickoff](references/kickoff.md) |
 | Requirements | The specs format: requirements, business rules, acceptance criteria, non-goals | [requirements](references/requirements.md) |
 | Context File | AGENTS.md vs context.md, writing context docs, resuming work | [context-file](references/context-file.md) |

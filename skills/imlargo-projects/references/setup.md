@@ -8,7 +8,7 @@ description: "How imlargo initializes a repository: which template to start from
 ## Init Checklist
 
 - Repo name in kebab-case, matching the product or package.
-- Libraries and open source: MIT `LICENSE`. Client projects: no public license.
+- Libraries and open source: MIT `LICENSE`. Private projects: no public license.
 - `.env.example` lists every variable, and the env schema validates them on startup.
 - Pre-commit hooks (husky + lint-staged) from the first commit. CI with the check gate in production projects and libraries, not prototypes.
 
@@ -27,7 +27,7 @@ description: "How imlargo initializes a repository: which template to start from
 
 - SvelteKit apps deploy to Cloudflare Workers, as the template ships.
 - A Go backend runs in Docker on a server, when the project needs one.
-- Anything else only when the client requires it.
+- Anything else only when the project requires it.
 
 ## Rules
 
