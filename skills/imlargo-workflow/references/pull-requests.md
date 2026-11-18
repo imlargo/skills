@@ -34,7 +34,6 @@ Always `## Summary` (problem first, then what changed and why this way), `closes
 - Don't describe a parent branch's changes as this PR's.
 - No filler ("This PR aims to...", "robust"); start sentences with the fact. Plain hyphens, no em or en dashes.
 - No secrets, user records or full payloads in the body. No PR-only files committed.
-- No `Co-Authored-By` or agent attribution lines.
 
 <!--
 Source references:

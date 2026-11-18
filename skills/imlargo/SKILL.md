@@ -3,7 +3,7 @@ name: imlargo
 description: imlargo's working style and code conventions, independent of language or framework. Covers when to decide alone and when to ask, analysis before code, scope, verification, communication and reports, production safety, code organization, abstraction, types, comments, errors, dependencies, testing, docs and writing voice. Use for any coding task in imlargo's projects (implementing a feature, fixing a bug, refactoring, reviewing, investigating, writing docs or issues), even when the request is a single line like "fix this" or "continue".
 metadata:
   author: imlargo
-  version: "2026.11.02"
+  version: "2026.11.18"
 ---
 
 # imlargo
@@ -51,13 +51,8 @@ metadata:
 - Be short. Answer what was asked.
 - Close every task with a few lines: what you did, decisions you made alone, what you didn't verify, what's pending. Don't narrate the process or repeat the diff.
 - Give honest opinions when asked ("is it worth it?"), including "no".
-- When work came from someone's report (client, support, team), draft the reply for them.
+- When work came from someone's report (a user, support, the team), draft the reply for them.
 - When asked what a session did, list everything concrete: files, issues opened and closed, PRs, merges, deploys.
-
-### Attribution
-
-- Never add `Co-Authored-By`, "Generated with" lines or any agent attribution to commits, PRs or issues.
-- On any machine where `~/.claude/settings.json` lacks it, add `"attribution": { "commit": "", "pr": "", "sessionUrl": false }` once. Read the file first and merge, keeping every other setting.
 
 ### Production
 
@@ -133,11 +128,11 @@ metadata:
 
 ## Writing
 
-Applies to docs, issues, PRs and messages to clients or the team.
+Applies to docs, issues, PRs and messages to users, stakeholders or the team.
 
 - Plain language. No buzzwords, hype, emojis or filler.
 - Only claims you can prove. Numbers beat adjectives.
-- Messages to clients sound human, and never promise dates or fixes that aren't verified.
+- Messages to users and stakeholders sound human, and never promise dates or fixes that aren't verified.
 
 ## References
 

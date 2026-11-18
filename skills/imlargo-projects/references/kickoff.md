@@ -21,4 +21,4 @@ Fill everything else (users, data, integrations) from the conversation and exist
 1. **Repo docs** for agents: `context.md`, the specs and the roadmap (see [context-file](context-file.md), [requirements](requirements.md)).
 2. **Backlog** on GitHub from the roadmap (see [backlog](backlog.md)).
 
-Nothing is built until imlargo approves the Define deliverables.
+Nothing is built until imlargo, or the product owner, approves the Define deliverables.

@@ -13,7 +13,7 @@ Conventional Commits, lowercase, imperative, no period, under ~70 characters. Sc
 
 - Describe the behavior that changes, not the code edited: `fix(billing): disabled accounts no longer count toward the plan limit`, not `fix: update countAccounts query`.
 - End with the issue: `feat(accounts): disable an account from the danger zone (#1321)`.
-- Body only when the why isn't obvious. Never `Co-Authored-By`.
+- Body only when the why isn't obvious.
 
 ## Granularity
 

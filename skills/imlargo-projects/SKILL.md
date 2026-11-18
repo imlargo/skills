@@ -12,18 +12,18 @@ metadata:
 
 ## Principles
 
-- Every project starts from one of imlargo's templates (see [setup](references/setup.md)). Legacy code is rebuilt on a fresh template, not patched in place.
+- A new project imlargo owns starts from one of imlargo's templates (see [setup](references/setup.md)), and legacy code imlargo owns is rebuilt on a fresh template, not patched in place. Inside a team's repo, its structure and process win.
 - Every project states whether it's a prototype or production. Prototypes, PoCs and templates skip tests and CI; production doesn't.
 - Context docs exist from day one (see [context-file](references/context-file.md)).
 - GitHub issues are the backlog, kept current (`imlargo-workflow`).
-- Product and business decisions are kept apart from code work and decided by imlargo.
+- Product and business decisions are kept apart from code work and made by imlargo or the product owner, never by the agent.
 
 ## Lifecycle
 
 1. **Define:** kickoff interview, then the repo docs (context, specs, roadmap). Nothing is built before this exists. → [kickoff](references/kickoff.md), [requirements](references/requirements.md)
 2. **Set up:** repo from the template, docs committed, backlog on GitHub. → [setup](references/setup.md), [backlog](references/backlog.md)
-3. **Build:** phase by phase, each one shipped and visible before the next.
-4. **Deliver and evolve:** handoff per phase; the software keeps growing afterwards. → [delivery](references/delivery.md)
+3. **Build:** in small increments, each one shipped and visible before the next.
+4. **Deliver and evolve:** a handoff at each milestone; the software keeps growing afterwards. → [delivery](references/delivery.md)
 
 ## Project Types
 

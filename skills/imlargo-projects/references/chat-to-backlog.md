@@ -17,7 +17,7 @@ Turn the conversations in the local context folder (`local-context/` or similar)
 - Close items already fixed and deployed, with their reference. Document what was fixed without an issue.
 - If the project has a GitHub Project, add and prioritize the issues there.
 - No secrets, credentials or customer personal data in GitHub. Nothing changes in production or `main` without approval.
-- Ambiguous items or business decisions: ask imlargo instead of creating the issue.
+- Ambiguous items or business decisions: ask imlargo or the product owner instead of creating the issue.
 - It must be repeatable. When imlargo says the chat was updated, process only what's new and sync everything again.
 
 ## Chat to Implementation
