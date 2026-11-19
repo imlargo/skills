@@ -3,12 +3,12 @@ name: imlargo-ui-pass
 description: imlargo's deep UI/UX pass, reviewing and redesigning a product view by view until it reaches the level of the best enterprise SaaS, with freedom to rework flows. Covers how to approach each view, the quality bar, references and what the final report contains. Use when imlargo asks for a UI/UX pass, polish or redesign of views, screens or a whole platform, or to raise the interface to an enterprise level.
 metadata:
   author: imlargo
-  version: "2026.10.22"
+  version: "2026.11.19"
 ---
 
 # UI Pass
 
-> Builds on `imlargo`, `imlargo-frontend`, `imlargo-design` and `imlargo-anti-slop`. This skill grants wider scope and autonomy than `imlargo`, and wins where they conflict.
+> Builds on `imlargo`, `imlargo-frontend`, `imlargo-design` and `imlargo-anti-slop`. This skill grants wider scope and autonomy than `imlargo`, and wins where they conflict. In a project whose design or product decisions belong to someone else, the wider autonomy doesn't apply: the pass produces proposals for them, and only agreed changes are built, within the project's design system.
 
 ## Mandate
 

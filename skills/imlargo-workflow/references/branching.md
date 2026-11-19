@@ -7,7 +7,7 @@ description: "Fast and formal branching modes, branch names, feature, release an
 
 ## Modes
 
-- **Fast** (quick MVPs, fast-moving projects): commit and push straight to `main`. The commit that finishes an issue has `Closes #N` in its body.
+- **Fast** (quick MVPs, fast-moving projects, only in repos imlargo owns): commit and push straight to `main`. The commit that finishes an issue has `Closes #N` in its body.
 - **Formal** (the repo has `develop`): `main` is production, `develop` is what ships next, and both only change through PRs (except syncing `develop` from `main`). Propose switching when the project gets real users or needs grouped deploys; never create `develop` on your own.
 
 ## Names

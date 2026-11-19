@@ -14,4 +14,4 @@ description: "How imlargo's own products, libraries and prototypes differ in pro
 | Docs | Context, ADRs | Public README and docs site | README |
 | Delivery | Continuous | Releases to npm | A demo |
 
-Work inside a team or company follows that team's repo, process and `AGENTS.md`; these skills fill only what the repo doesn't define.
+Work in a project imlargo doesn't own follows that project's repo, process and `AGENTS.md`; these skills fill only what the project doesn't define.

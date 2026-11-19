@@ -5,7 +5,7 @@ description: "How imlargo lays out a SvelteKit project, following imlargo/svelte
 
 # Project Structure
 
-Canonical examples: [svelte-template](https://github.com/imlargo/svelte-template) (most evolved), [ing](https://github.com/imlargo/ing), [svdocs](https://github.com/imlargo/svdocs), coral.
+Canonical examples: [svelte-template](https://github.com/imlargo/svelte-template) (most evolved), [svdocs](https://github.com/imlargo/svdocs), coral.
 
 ## Layout
 

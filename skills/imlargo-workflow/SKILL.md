@@ -3,12 +3,14 @@ name: imlargo-workflow
 description: imlargo's git and GitHub workflow. Covers branching modes (fast on main, formal with develop), Conventional Commits, pull requests, releases and hotfixes, issues (titles, labels, priority, templates, closing), versioning and changelogs, and GitHub Projects. Use whenever committing, creating a branch, opening or merging a PR, preparing a release or hotfix, writing, triaging or closing an issue, or tagging a version, triaging or grooming issues, even when the user only says "commit this", "open a PR" or "file a bug".
 metadata:
   author: imlargo
-  version: "2026.11.18"
+  version: "2026.11.19"
 ---
 
 # Workflow
 
 > Builds on `imlargo`. Planning and backlog decisions belong to `imlargo-projects`. A repo's own CONTRIBUTING.md, templates or AGENTS.md win over these rules.
+>
+> These are the defaults for repos imlargo owns. In a repo imlargo doesn't own, its process wins entirely: branch names (including any ticket key format), commit format, PR template, reviewers, tracker and merge rules (see `imlargo`). Fast mode never applies there: always a branch and a PR. The GitHub issue, label and Projects rules apply only where the project uses them.
 
 ## Principles
 

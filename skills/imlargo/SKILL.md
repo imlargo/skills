@@ -54,6 +54,19 @@ metadata:
 - When work came from someone's report (a user, support, the team), draft the reply for them.
 - When asked what a session did, list everything concrete: files, issues opened and closed, PRs, merges, deploys.
 
+### Defaults and the Project's Own Rules
+
+These skills are imlargo's defaults and preferences: specific on purpose, and applied as written in projects imlargo owns. A project that already decided otherwise wins.
+
+- In a repo imlargo doesn't own, or one with established conventions, follow the project: structure, libraries, design system, styling, branch and commit format, PR template, tracker, review and release process. A skill's rule applies only where the project is silent.
+- Read the repo's `AGENTS.md`, CONTRIBUTING, PR template and a few recent merged PRs before the first change, and match them.
+- Principles that don't depend on a stack (correctness, security, accessibility, testing, verification, honest reports) hold everywhere.
+- When a default would clearly improve the project, propose it; never switch a project's choice unasked.
+- Product, design and scope decisions belong to whoever owns them in that project (product owner, designer, tech lead). Propose; don't decide.
+- In a repo imlargo doesn't own, never push to a shared branch, merge, or bypass review or CI. Work on a branch and open a PR; merging follows the project's process.
+- Code, data, internal names, URLs, tickets and customer information from a project imlargo doesn't own never leave it: not into public repos, skills, posts, prompts for other tools or examples. Generalize them first.
+- Follow the organization's AI and security policies, including which tools may see which code.
+
 ### Production
 
 - Never deploy unless asked in the current session. If merging to a branch deploys automatically, a merge is a deploy: check before merging. When asked, group the changes into one deploy and verify in production afterwards.

@@ -3,7 +3,7 @@ name: imlargo-go
 description: How imlargo writes Go and builds backends. Covers where backend decisions live (medusa), the backend rules that hold in any service, Go style and naming, errors and context, concurrency and shutdown, and testing. Use when writing, reviewing or scaffolding Go code or any backend (.go files, go.mod, APIs, services, jobs, CLIs). Encodes imlargo's rules, not a Go tutorial.
 metadata:
   author: imlargo
-  version: "2026.11.02"
+  version: "2026.11.19"
 ---
 
 # Go
@@ -12,7 +12,7 @@ metadata:
 
 ## Backends Are medusa
 
-imlargo's backends are Go on [imlargo/medusa](https://github.com/imlargo/medusa): new ones copy its `app/`. Stack, layout, recipes, API contracts and platform decisions live in medusa's `AGENTS.md` and docs, and they win over this skill. In a repo with another stack (butter), follow that repo; propose library swaps, never make them unasked.
+imlargo's backends are Go on [imlargo/medusa](https://github.com/imlargo/medusa): new ones copy its `app/`. Stack, layout, recipes, API contracts and platform decisions live in medusa's `AGENTS.md` and docs, and they win over this skill. In a repo with another stack, follow that repo (see `imlargo`); propose library swaps, never make them unasked.
 
 ## Backend Rules
 

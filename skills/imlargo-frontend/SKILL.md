@@ -9,6 +9,8 @@ metadata:
 # Frontend
 
 > Builds on `imlargo`. Visual taste lives in `imlargo-design`. TypeScript rules live in `imlargo-typescript`. Framework-specific rules live in their own skill (`imlargo-svelte`, `imlargo-react`). Keep this one valid for any framework.
+>
+> The stack choices here (Tailwind, shadcn, no form library, no client cache, zod) are imlargo's defaults. A project with its own design system, styling or data and form libraries keeps them (see `imlargo`); the architecture principles, error handling, accessibility, performance and the views checklist still apply.
 
 ## Architecture
 

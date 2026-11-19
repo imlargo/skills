@@ -10,7 +10,7 @@ metadata:
 
 > Builds on `imlargo`, `imlargo-frontend` and `imlargo-typescript`. Only how imlargo uses React; skip what react.dev teaches. Targets React 19.
 >
-> React is mostly team or company work. A repo's own structure, libraries and `AGENTS.md` win; this skill fills what the repo doesn't define.
+> The stack and structure here are imlargo's defaults. In an existing codebase, its structure, libraries, design system and `AGENTS.md` win (see `imlargo`); this skill fills what the project doesn't define. The principles (pure logic outside React, effects only for syncing, derived state, stable keys, accessibility, testing by role) hold in any codebase.
 
 ## Preferences
 

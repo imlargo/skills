@@ -1,6 +1,6 @@
 ---
 name: imlargo-projects
-description: How imlargo starts, shapes and delivers projects, whether own products, libraries, prototypes or work inside a team. Covers kickoff and the Define phase, specs, context docs and handoffs, templates and repo setup, backlog and MVP, turning team or support chats into a verified backlog, and delivery. Use when starting a new project or repo, writing specs, context docs, ADRs or handoffs, planning or syncing a backlog, converting chats or support threads into issues, or preparing a delivery.
+description: How imlargo starts, shapes and delivers projects, whether own products, libraries, prototypes or work in projects imlargo doesn't own. Covers kickoff and the Define phase, specs, context docs and handoffs, templates and repo setup, backlog and MVP, turning team or support chats into a verified backlog, and delivery. Use when starting a new project or repo, writing specs, context docs, ADRs or handoffs, planning or syncing a backlog, converting chats or support threads into issues, or preparing a delivery.
 metadata:
   author: imlargo
   version: "2026.11.18"
@@ -12,7 +12,7 @@ metadata:
 
 ## Principles
 
-- A new project imlargo owns starts from one of imlargo's templates (see [setup](references/setup.md)), and legacy code imlargo owns is rebuilt on a fresh template, not patched in place. Inside a team's repo, its structure and process win.
+- A new project imlargo owns starts from one of imlargo's templates (see [setup](references/setup.md)), and legacy code imlargo owns is rebuilt on a fresh template, not patched in place. In a repo imlargo doesn't own, its structure and process win.
 - Every project states whether it's a prototype or production. Prototypes, PoCs and templates skip tests and CI; production doesn't.
 - Context docs exist from day one (see [context-file](references/context-file.md)).
 - GitHub issues are the backlog, kept current (`imlargo-workflow`).
@@ -32,7 +32,7 @@ metadata:
 | Own product | imlargo's products. imlargo decides scope and pace; production or prototype, stated up front. |
 | Library / open source | Public API, versioning, changelog, docs, npm publishing. |
 | Prototype / PoC | Validates an idea fast on the template. No tests or CI; still clean code. |
-| Team or company work | Follows that team's repo, process and `AGENTS.md`; this skill fills only what the repo doesn't define. |
+| Someone else's project | Follows that project's repo, process and `AGENTS.md`; this skill fills only what the project doesn't define. |
 
 Details in [project-types](references/project-types.md).
 

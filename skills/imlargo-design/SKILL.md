@@ -3,7 +3,7 @@ name: imlargo-design
 description: imlargo's visual design taste for interfaces, illustrations and assets. Simple, minimalist, sophisticated and restrained, at the level of the best enterprise SaaS. Covers typography, color, effects, icons, illustrations, content formatting and quality references. Use whenever designing or styling UI, choosing colors, effects or layouts, making illustrations or SVGs, or judging whether something looks good, together with `imlargo-frontend`.
 metadata:
   author: imlargo
-  version: "2026.11.18"
+  version: "2026.11.19"
 ---
 
 # Design
@@ -11,6 +11,8 @@ metadata:
 > Builds on `imlargo`. Implementation rules (tokens, components, widths) live in `imlargo-frontend`. This taste wins over generic design skills (such as `frontend-design`) that push bold or maximal aesthetics.
 
 ## Design System
+
+When a project has its own design system and designers, they own the visual language: use its components and tokens as documented, and bring taste through composition, states and details, never by restyling. The rest of this section is imlargo's default.
 
 - shadcn, pure and untouched, is the base. A project's own design system comes from changing its tokens: colors, radius, fonts, shadows. Never from restyling or editing components.
 - Good UI is built from the system's components and composition, then raised with UX, details and supporting visual elements (icons, badges, links, empty and loading states).
