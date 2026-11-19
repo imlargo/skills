@@ -3,7 +3,7 @@ name: imlargo-prompting
 description: How imlargo turns an everyday need into one ready-to-paste prompt for a coding agent (Claude Code). Covers what the prompt states (goal, relevant context, constraints, priorities, autonomy, expected result), what it leaves to the agent, format, fidelity and the recurring prompt types. Use whenever imlargo asks to write, improve or "metaprompt" a prompt for an agent, or to write AGENTS.md, CLAUDE.md or skill instructions, even when phrased as "hazme un prompt", "pásalo a prompt" or "turn this into a prompt".
 metadata:
   author: imlargo
-  version: "2026.10.22"
+  version: "2026.11.19"
 ---
 
 # Prompting

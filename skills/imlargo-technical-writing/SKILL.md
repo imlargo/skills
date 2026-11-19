@@ -28,7 +28,7 @@ metadata:
 3. Outline with headings that say what each section answers. Check the outline covers the reader's task end to end before writing prose.
 4. Write the examples first, then the prose around them.
 5. Verify: run or trace every command and example, check every link and path, compare every option and default with the source. Report anything you couldn't verify.
-6. Cut: remove every sentence that doesn't change what the reader knows or does, then run the `avoid-ai-writing` rules on the prose (see `imlargo-anti-slop`).
+6. Cut: remove every sentence that doesn't change what the reader knows or does, then run `imlargo-avoid-ai-writing` on the prose.
 
 ## Style
 

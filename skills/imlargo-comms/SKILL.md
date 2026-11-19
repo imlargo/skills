@@ -35,7 +35,7 @@ metadata:
 - Deliver the message ready to paste, nothing around it. Email adds a subject line.
 - Placeholders for anything imlargo must fill or confirm, in brackets, listed in one line after the message.
 - One version. Alternatives only when asked, or when the right tone truly depends on something you can't know (then two, labeled by when to use each).
-- Run it through the `avoid-ai-writing` rules before delivering (see `imlargo-anti-slop`).
+- Run it through `imlargo-avoid-ai-writing` before delivering.
 
 ## Never
 

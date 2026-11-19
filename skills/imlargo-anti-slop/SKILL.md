@@ -23,19 +23,19 @@ metadata:
 | Prompts for agents | `imlargo-prompting` |
 | Messages and emails | `imlargo-comms` |
 | READMEs, docs, guides, API reference | `imlargo-technical-writing` |
-| Any prose | the `avoid-ai-writing` skill (see below) |
+| Any prose | `imlargo-avoid-ai-writing` (see below) |
 
-## Prose Goes Through `avoid-ai-writing`
+## Prose Goes Through `imlargo-avoid-ai-writing`
 
-imlargo has the `avoid-ai-writing` skill installed. Use it on every piece of prose before delivering it:
+Use it on every piece of prose before delivering it:
 
-- **Substantial drafts** (issue and PR bodies, release notes, docs pages, client or team messages, posts): write, then run it in `rewrite` mode and deliver the corrected version.
+- **Substantial drafts** (issue and PR bodies, release notes, docs pages, messages, posts): write, then run it in `rewrite` mode and deliver the corrected version.
 - **Files already written** (a doc or markdown file in the repo): run it in `edit` mode on that file.
 - **Reviewing someone else's text:** `detect` mode, flags only.
-- **Short text** (chat answers, commit messages, a README section, UI copy): apply its rules while writing; a full audit doubles the cost for no gain.
+- **Short text** (chat answers, commit messages, a README section, UI copy): apply its P0 and P1 lists while writing; a full audit doubles the cost for no gain.
 - The audit's findings never go into the deliverable. Deliver only the clean text.
 
-Never let it touch code, code blocks, tables or quoted text. If the skill isn't available, apply the Text section below by hand.
+Never let it touch code, code blocks, tables or quoted text. If the skill isn't installed, apply the Text section below by hand.
 
 ## Everywhere
 

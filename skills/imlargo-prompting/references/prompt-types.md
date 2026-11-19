@@ -26,5 +26,5 @@ The skills already hold how each task runs, so a prompt names the task type or s
 | Repo tidy-up | What to tidy. Safe phase now, deeper phase only on approval. |
 | Context docs | What was discussed and for which product. Context and technical specs, the what only, so another agent decides the how. |
 | Docs, ADRs, handoffs | Which repos and period, and where the docs go. Confirm access to repos and conversations first. ADRs first. |
-| Communication assistant | The relationship, the people, the situation and the channel. Sounds like imlargo; run through `avoid-ai-writing`; ask for missing context before drafting. |
-| LinkedIn post | The ideas, kept whole. Research the content, a genuine hook that isn't clickbait, none of the usual LinkedIn patterns, run through `avoid-ai-writing`. Ask about intent and context first. |
+| Communication assistant | The relationship, the people, the situation and the channel. Sounds like imlargo; run through `imlargo-avoid-ai-writing`; ask for missing context before drafting. |
+| LinkedIn post | The ideas, kept whole. Research the content, a genuine hook that isn't clickbait, none of the usual LinkedIn patterns, run through `imlargo-avoid-ai-writing`. Ask about intent and context first. |
