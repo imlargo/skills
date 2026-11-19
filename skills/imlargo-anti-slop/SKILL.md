@@ -3,7 +3,7 @@ name: imlargo-anti-slop
 description: imlargo's guard against AI slop in anything an agent produces (frontend and backend code, APIs, tests, scripts, config, UI, visual design, SVGs, docs, issues, PRs, commits, chat answers, reports and messages). Lists the patterns that make output look machine-generated and routes each kind of output to the skill that holds its rules. Use whenever producing or reviewing any output for imlargo, before handing work back, and when imlargo says "no slop", "sin AI slop" or complains something looks generic.
 metadata:
   author: imlargo
-  version: "2026.11.02"
+  version: "2026.11.19"
 ---
 
 # Anti-Slop
@@ -15,11 +15,14 @@ metadata:
 | Producing | Follow |
 |-----------|--------|
 | Any code | `imlargo` |
-| Frontend code | `imlargo-frontend` plus the stack's skill (`imlargo-svelte`, with its Svelte MCP autofixer) |
+| TypeScript | `imlargo-typescript` |
+| Frontend code | `imlargo-frontend` plus the stack's skill (`imlargo-svelte` with its Svelte MCP autofixer, or `imlargo-react`) |
 | Backend code | `imlargo-go`, plus the repo's `AGENTS.md` (medusa) |
 | Visual design, illustrations, SVGs | `imlargo-design` |
 | Commits, PRs, issues, releases | `imlargo-workflow` |
 | Prompts for agents | `imlargo-prompting` |
+| Messages and emails | `imlargo-comms` |
+| READMEs, docs, guides, API reference | `imlargo-technical-writing` |
 | Any prose | the `avoid-ai-writing` skill (see below) |
 
 ## Prose Goes Through `avoid-ai-writing`

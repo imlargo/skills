@@ -31,9 +31,9 @@ Only `skills/` is distributed. Anything that is not skill content (templates, no
 | Layer | Skills | Contains |
 |-------|--------|----------|
 | Base | `imlargo`, `imlargo-anti-slop` | How imlargo works, code conventions and output quality valid everywhere |
-| Process | `imlargo-projects`, `imlargo-workflow`, `imlargo-prompting` | How projects start and ship; git and GitHub mechanics; prompts for agents |
+| Process | `imlargo-projects`, `imlargo-workflow`, `imlargo-prompting`, `imlargo-comms`, `imlargo-technical-writing` | How projects start and ship; git and GitHub mechanics; prompts for agents; messages and emails; technical docs |
 | Domain | `imlargo-frontend`, `imlargo-design`, `imlargo-ui-pass` | Rules independent of framework or language, and domain-wide task skills |
-| Technology | `imlargo-svelte`, `imlargo-go` | How imlargo uses that stack, never a tutorial on it. Backend decisions live in medusa; `imlargo-go` holds only Go idioms and cross-service rules |
+| Technology | `imlargo-typescript`, `imlargo-svelte`, `imlargo-react`, `imlargo-go` | How imlargo uses that stack, never a tutorial on it. Backend decisions live in medusa; `imlargo-go` holds only Go idioms and cross-service rules |
 
 - Put each rule in the most general layer where it holds. A Svelte skill must not restate frontend rules; a Go skill must not restate what medusa documents.
 - When layers conflict, the more specific skill wins. Say so explicitly in the specific skill.

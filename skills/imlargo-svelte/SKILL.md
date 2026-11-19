@@ -3,12 +3,12 @@ name: imlargo-svelte
 description: How imlargo works with Svelte 5 and SvelteKit. Covers project structure (from imlargo's SvelteKit template), runes and state, load functions and streaming, form actions, environment and routing APIs, and using the Svelte MCP. Use when writing, reviewing or scaffolding .svelte or .svelte.ts files, Svelte components or SvelteKit routes. Encodes imlargo's rules, not a Svelte tutorial.
 metadata:
   author: imlargo
-  version: "2026.10.22"
+  version: "2026.11.19"
 ---
 
 # Svelte
 
-> Builds on `imlargo` and `imlargo-frontend`. Only how imlargo uses Svelte; skip what the official docs already teach.
+> Builds on `imlargo`, `imlargo-frontend` and `imlargo-typescript`. Only how imlargo uses Svelte; skip what the official docs already teach.
 >
 > Targets Svelte 5 and SvelteKit 3. New projects start from [imlargo/svelte-template](https://github.com/imlargo/svelte-template); a project's own `AGENTS.md` wins.
 

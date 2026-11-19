@@ -3,7 +3,7 @@ name: imlargo
 description: imlargo's working style and code conventions, independent of language or framework. Covers when to decide alone and when to ask, analysis before code, scope, verification, communication and reports, production safety, code organization, abstraction, types, comments, errors, dependencies, testing, docs and writing voice. Use for any coding task in imlargo's projects (implementing a feature, fixing a bug, refactoring, reviewing, investigating, writing docs or issues), even when the request is a single line like "fix this" or "continue".
 metadata:
   author: imlargo
-  version: "2026.11.18"
+  version: "2026.11.19"
 ---
 
 # imlargo
@@ -116,6 +116,7 @@ metadata:
 - `AGENTS.md` holds rules for agents and humans. `CLAUDE.md` only points to it. `context.md` holds specs and product context.
 - One source of truth per fact. When docs and code disagree, the code wins and the doc gets fixed.
 - No loose files in `docs/` or the repo root.
+- Writing READMEs, docs pages, guides or reference follows `imlargo-technical-writing`.
 
 ### Tooling
 
@@ -128,7 +129,7 @@ metadata:
 
 ## Writing
 
-Applies to docs, issues, PRs and messages to users, stakeholders or the team.
+Applies to docs, issues, PRs and messages to users, stakeholders or the team. Messages and emails follow `imlargo-comms`.
 
 - Plain language. No buzzwords, hype, emojis or filler.
 - Only claims you can prove. Numbers beat adjectives.

@@ -43,11 +43,15 @@ All skills are hand-maintained and opinionated. They are layered: `imlargo` is t
 imlargo                      how I work + code conventions (always relevant)
 ├── imlargo-anti-slop        no AI slop in any output; routes to the right skills
 ├── imlargo-prompting        everyday needs into ready-to-paste agent prompts
+├── imlargo-comms            professional messages and emails: Slack, Teams, email
+├── imlargo-technical-writing  READMEs, docs sites, guides, reference, architecture docs
 ├── imlargo-projects         kickoff, requirements, context, setup, backlog, delivery
 ├── imlargo-workflow         git and GitHub: branches, commits, versions, PRs, issues, boards
 ├── imlargo-design           visual taste: simple, minimalist, sophisticated
+├── imlargo-typescript       TypeScript in any framework or runtime
 ├── imlargo-frontend         frontend rules, any framework
 │   ├── imlargo-svelte       Svelte / SvelteKit, my way
+│   ├── imlargo-react        React, my way (on top of imlargo-typescript)
 │   └── imlargo-ui-pass      deep UI/UX pass, view by view
 └── imlargo-go               Go and backends, on top of medusa's own docs
 ```
@@ -57,12 +61,16 @@ imlargo                      how I work + code conventions (always relevant)
 | [imlargo](skills/imlargo) | Working style and code conventions, independent of language or framework |
 | [imlargo-anti-slop](skills/imlargo-anti-slop) | Guard against AI slop in anything the agent produces (code, UI, design, text); routes each output to its skill |
 | [imlargo-prompting](skills/imlargo-prompting) | Turn an everyday need into one ready-to-paste prompt for a coding agent |
+| [imlargo-comms](skills/imlargo-comms) | Professional messages and emails: structure, audiences, channels, message types |
+| [imlargo-technical-writing](skills/imlargo-technical-writing) | Technical docs: doc types, READMEs, architecture, guides and reference, style |
 | [imlargo-projects](skills/imlargo-projects) | How projects start and ship: kickoff, requirements, context file, templates, backlog, delivery |
 | [imlargo-workflow](skills/imlargo-workflow) | Git and GitHub: branches, commits, versioning and releases, PRs, issues, project boards |
 | [imlargo-design](skills/imlargo-design) | Visual taste: simple, minimalist, sophisticated, enterprise SaaS level |
 | [imlargo-frontend](skills/imlargo-frontend) | Frontend rules: architecture, components, state, styling, a11y, performance |
 | [imlargo-ui-pass](skills/imlargo-ui-pass) | Deep UI/UX pass, view by view, to an enterprise SaaS level |
+| [imlargo-typescript](skills/imlargo-typescript) | How I write TypeScript: config, types, boundaries, libraries |
 | [imlargo-svelte](skills/imlargo-svelte) | How I work with Svelte and SvelteKit |
+| [imlargo-react](skills/imlargo-react) | How I work with React: layers, hooks and effects, data, testing |
 | [imlargo-go](skills/imlargo-go) | How I write Go and backends; backend decisions live in medusa |
 
 > [!TIP]
@@ -89,6 +97,7 @@ Then write the content, add the skill to the table above and, if it builds on ot
 
 - The pull request workflow, PR body guide, visual evidence workflow and commit granularity rules in `imlargo-workflow` are adapted from [antfu/skills](https://github.com/antfu/skills) (MIT), which in turn adapted them from [moeru-ai/airi](https://github.com/moeru-ai/airi) (MIT).
 - The issue triage workflow in `imlargo-workflow`, and the simplify and interview references in `imlargo`, are adapted from [antfu/skills](https://github.com/antfu/skills) (MIT). The handoff, research and audit rules, the two-axis code review and the client questionnaire take ideas from [mattpocock/skills](https://github.com/mattpocock/skills) and [shadcn/improve](https://github.com/shadcn/improve) (MIT).
+- The doc types in `imlargo-technical-writing` follow the [Diátaxis](https://diataxis.fr/) framework (CC-BY-SA 4.0).
 - Writing rules in `imlargo-anti-slop` take ideas from [SimpleEnglish](https://github.com/AminBlg/SimpleEnglish) (MIT) and Cursor's [unslop](https://github.com/cursor/plugins/tree/main/pstack/skills/unslop).
 
 ## License

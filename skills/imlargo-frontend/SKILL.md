@@ -1,14 +1,14 @@
 ---
 name: imlargo-frontend
-description: imlargo's frontend rules, independent of framework. Covers app architecture (services, contracts, environment, routes), components, state and data loading, forms, errors, styling and design system use, and the checklist a view must pass before it counts as done. Use when building, reviewing or scaffolding any web UI, together with the framework skill (e.g. imlargo-svelte).
+description: imlargo's frontend rules, independent of framework. Covers app architecture (services, contracts, environment, routes), components, state and data loading, forms, errors, styling and design system use, and the checklist a view must pass before it counts as done. Use when building, reviewing or scaffolding any web UI, together with the framework skill (imlargo-svelte or imlargo-react).
 metadata:
   author: imlargo
-  version: "2026.11.02"
+  version: "2026.11.19"
 ---
 
 # Frontend
 
-> Builds on `imlargo`. Visual taste lives in `imlargo-design`. Framework-specific rules live in their own skill (`imlargo-svelte`). Keep this one valid for any framework.
+> Builds on `imlargo`. Visual taste lives in `imlargo-design`. TypeScript rules live in `imlargo-typescript`. Framework-specific rules live in their own skill (`imlargo-svelte`, `imlargo-react`). Keep this one valid for any framework.
 
 ## Architecture
 
