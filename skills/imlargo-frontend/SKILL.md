@@ -54,7 +54,7 @@ metadata:
 
 A view isn't done when the happy path works with sample data. Walk every role's journey before calling it done.
 
-Features are fully featured, never half-built. When building or reworking a view, add everything its users need from it, even if nobody listed it: search, filters, sorting, bulk actions, indicators and summaries, shortcuts, useful details and visual touches. Add what the view needs, not every pattern there is.
+Features are fully featured, never half-built. When building or reworking a view, add everything its users need from it, even if nobody listed it. There's full freedom to add whatever serves them: search, filters, sorting, bulk actions, a card or table view, indicators and summaries, shortcuts, useful details, visual touches. Those are examples, not a checklist; add what the view needs, not every pattern there is.
 → [views](references/views.md)
 
 ## Accessibility
