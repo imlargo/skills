@@ -3,7 +3,7 @@ name: imlargo-frontend
 description: imlargo's frontend rules, independent of framework. Covers app architecture (services, contracts, environment, routes), components, state and data loading, forms, errors, styling and design system use, and the checklist a view must pass before it counts as done. Use when building, reviewing or scaffolding any web UI, together with the framework skill (imlargo-svelte or imlargo-react).
 metadata:
   author: imlargo
-  version: "2026.11.19"
+  version: "2026.11.22"
 ---
 
 # Frontend
@@ -53,6 +53,8 @@ metadata:
 ## Views
 
 A view isn't done when the happy path works with sample data. Walk every role's journey before calling it done.
+
+Features are fully featured, never half-built. When building or reworking a view, add everything its users need from it, even if nobody listed it: search, filters, sorting, bulk actions, indicators and summaries, shortcuts, useful details and visual touches. Add what the view needs, not every pattern there is.
 → [views](references/views.md)
 
 ## Accessibility

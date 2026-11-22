@@ -67,9 +67,9 @@ imlargo                      how I work + code conventions (always relevant)
 | [imlargo-technical-writing](skills/imlargo-technical-writing) | Technical docs: doc types, READMEs, architecture, guides and reference, style |
 | [imlargo-projects](skills/imlargo-projects) | How projects start and ship: kickoff, requirements, context file, templates, backlog, delivery |
 | [imlargo-workflow](skills/imlargo-workflow) | Git and GitHub: branches, commits, versioning and releases, PRs, issues, project boards |
-| [imlargo-design](skills/imlargo-design) | Visual taste: simple, minimalist, sophisticated, enterprise SaaS level |
+| [imlargo-design](skills/imlargo-design) | Visual taste and default UI patterns: simple, minimalist, sophisticated, enterprise SaaS level |
 | [imlargo-frontend](skills/imlargo-frontend) | Frontend rules: architecture, components, state, styling, a11y, performance |
-| [imlargo-ui-pass](skills/imlargo-ui-pass) | Deep UI/UX pass, view by view, to an enterprise SaaS level |
+| [imlargo-ui-pass](skills/imlargo-ui-pass) | Deep UI/UX redesign, view by view, with navigation and flows, to an enterprise SaaS level |
 | [imlargo-typescript](skills/imlargo-typescript) | How I write TypeScript: config, types, boundaries, libraries |
 | [imlargo-svelte](skills/imlargo-svelte) | How I work with Svelte and SvelteKit |
 | [imlargo-react](skills/imlargo-react) | How I work with React: layers, hooks and effects, data, testing |
